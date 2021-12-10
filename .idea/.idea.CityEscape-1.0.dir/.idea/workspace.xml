@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9918b46d-36c8-4628-bb73-638ecaf2b918" name="Default Changelist" comment="" />
+    <list default="true" id="9918b46d-36c8-4628-bb73-638ecaf2b918" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CityEscape-1.0.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CityEscape-1.0.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Scripts/CameraMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Scripts/CameraMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Scripts/PlayerMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Scripts/PlayerMove.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +22,18 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/CityEscape/Assets/Scripts/CameraMove.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CityEscape/Assets/Scripts/PlayerMove.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/CityEscape/Assets/Scripts/CameraMove.cs" />
+        <option value="$PROJECT_DIR$/CityEscape/Assets/Scripts/PlayerMove.cs" />
+      </list>
+    </option>
   </component>
   <component name="ProjectId" id="2269AF5Ybx9V8wRTXRLVxu59kfl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -29,14 +54,41 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1639147025328</updated>
-      <workItem from="1639147028628" duration="298000" />
+      <workItem from="1639147028628" duration="2435000" />
     </task>
+    <task id="LOCAL-00001" summary="First Basic Push of Project">
+      <created>1639147664861</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1639147664861</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="First Basic Push of Project" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Basic Push of Project" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1639147670314">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1639147670314" />
   </component>
 </project>
