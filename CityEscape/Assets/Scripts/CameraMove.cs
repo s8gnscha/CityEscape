@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 /**
  * Skript, der die Kamera bewegt. Die Kamera soll sich automatisch mit dem Spieler bewegen
@@ -8,7 +10,7 @@ public class CameraMove : MonoBehaviour
    public Transform target;
   
    //Wie flüssig die Kamera gehen soll
-   public float smoothSpeed = 0.125f;
+   public float smoothSpeed = 1f;
    //der wert, wie viel die kamera eigentlich vom spieler verschoben werden soll
    public Vector3 offset;
   
@@ -19,11 +21,11 @@ public class CameraMove : MonoBehaviour
     */
    void FixedUpdate ()
    {
-    Vector3 desiredPosition = target.position + offset;
+    Vector3 desiredPosition = new Vector3(target.position.x,0,target.position.z) + offset;
     Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
     transform.position = smoothedPosition;
-  
-    transform.LookAt(target);
+    
+    
    }
 
 }
