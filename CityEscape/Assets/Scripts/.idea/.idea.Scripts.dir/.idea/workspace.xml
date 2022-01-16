@@ -1,25 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49003cfd-712f-4f11-a425-5477ee125fd9" name="Default Changelist" comment="" />
+    <list default="true" id="49003cfd-712f-4f11-a425-5477ee125fd9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../.idea/.idea.CityEscape-1.0.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/.idea.CityEscape-1.0.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CameraMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CameraMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Goal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Goal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Obstacle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Obstacle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlayerMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PlayerMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$USER_HOME$/Unity/Medienprojekt/Assets/Medienprojekt/Scripts/Maingame/Game/Button/AButton.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CameraMove.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Unity/Medienprojekt/Assets/Medienprojekt/Scripts/Maingame/Game/Button/AButton.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CameraMove.cs" />
         <option value="$PROJECT_DIR$/PlayerMove.cs" />
+        <option value="$PROJECT_DIR$/CameraMove.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="220XNMvPAlUFvfyVaSIw6qPzNZ4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -39,12 +54,15 @@
       <updated>1638975461137</updated>
       <workItem from="1638975466365" duration="677000" />
       <workItem from="1639050573458" duration="4920000" />
+      <workItem from="1641988212528" duration="1544000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

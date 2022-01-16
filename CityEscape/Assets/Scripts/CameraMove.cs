@@ -13,7 +13,8 @@ public class CameraMove : MonoBehaviour
    public float smoothSpeed = 1f;
    //der wert, wie viel die kamera eigentlich vom spieler verschoben werden soll
    public Vector3 offset;
-  
+
+   public float cameraX;
    /**
     * Bei FixedUpdate wird die Position der Kamera mithilfe von offset und target ausgerichtet.
     * Sie werden zusammenaddiert und mithilfe von smoothedPosition angepasst, damit die Position
@@ -21,7 +22,7 @@ public class CameraMove : MonoBehaviour
     */
    void FixedUpdate ()
    {
-    Vector3 desiredPosition = new Vector3(target.position.x,0,target.position.z) + offset;
+    Vector3 desiredPosition = new Vector3(cameraX,0,target.position.z) + offset;
     Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
     transform.position = smoothedPosition;
     

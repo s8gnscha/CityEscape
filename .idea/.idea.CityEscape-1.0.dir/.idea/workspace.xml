@@ -11,16 +11,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9918b46d-36c8-4628-bb73-638ecaf2b918" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CityEscape/Assets/Scripts/Obstacle.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CityEscape/Assets/Scripts/Obstacle.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CityEscape-1.0.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CityEscape-1.0.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CityEscape-1.0.dir/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CityEscape-1.0.dir/riderModule.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Scripts/.idea/.idea.Scripts.dir/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Scripts/.idea/.idea.Scripts.dir/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Scripts/.idea/.idea.Scripts.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Scripts/.idea/.idea.Scripts.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Scripts/CameraMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Scripts/CameraMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Scripts/Goal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Scripts/Goal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Scripts/Obstacle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Scripts/Obstacle.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Scripts/PlayerMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Scripts/PlayerMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CityEscape/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/ProjectSettings/InputManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,11 +32,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/Unity/Medienprojekt/Assets/Medienprojekt/Scripts/Maingame/MainMenu/Start.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CityEscape/Assets/Scripts/CameraMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Unity/Medienprojekt/Assets/Medienprojekt/Scripts/Maingame/Countdown/CountDownPlane.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CityEscape/Assets/Scripts/Goal.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CityEscape/Assets/Scripts/Goal.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Unity/Medienprojekt/Assets/Medienprojekt/Scripts/Maingame/Game/GameplayInput/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CityEscape/Assets/Scripts/Obstacle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CityEscape/Assets/Scripts/PlayerMove.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Unity/Medienprojekt/Assets/Medienprojekt/Scripts/Maingame/Game/GameplayInput/PlayerControls.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CityEscape/Assets/Scripts/UI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Unity/Medienprojekt/Assets/Medienprojekt/Scripts/Maingame/Countdown/CountdownSprite.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -43,8 +48,9 @@
       <list>
         <option value="$PROJECT_DIR$/CityEscape/Assets/Scripts/CameraMove.cs" />
         <option value="$PROJECT_DIR$/CityEscape/Assets/Scripts/Obstacle.cs" />
-        <option value="$PROJECT_DIR$/CityEscape/Assets/Scripts/PlayerMove.cs" />
         <option value="$PROJECT_DIR$/CityEscape/Assets/Scripts/Goal.cs" />
+        <option value="$PROJECT_DIR$/CityEscape/Assets/Scripts/UI.cs" />
+        <option value="$PROJECT_DIR$/CityEscape/Assets/Scripts/PlayerMove.cs" />
       </list>
     </option>
   </component>
@@ -82,6 +88,13 @@
       <workItem from="1640957389694" duration="884000" />
       <workItem from="1641124812422" duration="6563000" />
       <workItem from="1641208296762" duration="3119000" />
+      <workItem from="1641225002137" duration="7070000" />
+      <workItem from="1641377069681" duration="1815000" />
+      <workItem from="1641680305925" duration="6134000" />
+      <workItem from="1641814485806" duration="1915000" />
+      <workItem from="1641919028278" duration="5032000" />
+      <workItem from="1642113531028" duration="785000" />
+      <workItem from="1642252043031" duration="4284000" />
     </task>
     <task id="LOCAL-00001" summary="First Basic Push of Project">
       <created>1639147664861</created>
@@ -97,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639167083282</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Playermove extended">
+      <created>1641225049683</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1641225049683</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,7 +141,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="First Basic Push of Project" />
     <MESSAGE value="Dokumentieren von sachen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dokumentieren von sachen" />
+    <MESSAGE value="Playermove extended" />
+    <option name="LAST_COMMIT_MESSAGE" value="Playermove extended" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="161" key="#Plugins" timestamp="1640804892402">
@@ -140,13 +161,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1640619639425" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1639167090508">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1641225055465">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1639167090508" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1641225055465" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1640777023220">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1640777023220" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1641759927653">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1641759927653" />
   </component>
 </project>

@@ -5,8 +5,10 @@ using UnityEngine;
 public class Obstacle : MonoBehaviour
 {
 
+	public GameObject ui;
+
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Triggered");
+        ui.GetComponent<UI>().MessageHit();
     }
 }

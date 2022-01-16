@@ -5,8 +5,9 @@ using UnityEngine;
 public class Goal : MonoBehaviour
 {
 
+	public GameObject ui;
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Geschafft, Digga :3");
+        ui.GetComponent<UI>().MessageGoal();
     }
 }

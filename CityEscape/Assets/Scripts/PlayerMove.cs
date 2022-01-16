@@ -10,9 +10,12 @@ public class PlayerMove : MonoBehaviour
 
 	public Transform target;
 
+	public GameObject ui;
 	
 	private bool isGrounded;
 	private bool isWalling;
+
+	private bool isdown;
 	[SerializeField] private LayerMask groundLayers;
 	[SerializeField] private LayerMask wallLayers;
 	
@@ -27,28 +30,37 @@ public class PlayerMove : MonoBehaviour
 	private Vector3 velocity;
 
 	public Transform groundcheck;
+	public Transform groundcheckfront;
 
 	public Transform wallcheckleft;
 	public Transform wallcheckright;
 	
 	private int rotatecounter;
 
-	
+	private int horizontalInput;
 
 	private float currentTime;
+
+	private float downcurrentTime;
+
+	private bool isFalling;
 
 
 	private float f;
     void Start()
     {
+	    isFalling = false;
+	    horizontalInput = -10;
         rotatecounter=0;
 	    isWalling = false;
 	    push = true;
 	    line = 0;
 	    currentTime = 1f;
+	    downcurrentTime = 1f;
 	    characterController= GetComponent<CharacterController>();
-			
-       }
+
+	    isdown = false;
+    }
    
        
        /**
@@ -58,21 +70,25 @@ public class PlayerMove : MonoBehaviour
        void Update()
        {
 	       float x = Input.GetAxis("Horizontal");
-	       isGrounded = Physics.CheckSphere(groundcheck.position, 0.4f, groundLayers);
+	       isGrounded = Physics.CheckSphere(groundcheck.position, 0.4f, groundLayers)||Physics.CheckSphere(groundcheckfront.position, 0.4f, groundLayers);
+	       
+		       
 	       Gravity(isGrounded);
-	       MoveForward();
-	       MoveLeftRight(x);
 	       WalkWall(x);
 	       CheckWallWalking();
+	       MoveForward();
+	       MoveLeftRight(x);
+	       CheckDown();
 	       CheckJump(isGrounded);
 	       GoDown();
-	       
+	       CheckFalling();
+
        }
 
 
        void MoveForward()
        {
-	       int horizontalInput = -10;
+	       
 	       //transform.forward = new Vector3(horizontalInput, 0, Mathf.Abs(horizontalInput) - 1);
 	       characterController.Move(new Vector3(0, 0, horizontalInput) * Time.deltaTime);
        }
@@ -86,15 +102,18 @@ public class PlayerMove : MonoBehaviour
 	       {
 		       velocity.y += gravity * Time.deltaTime;
 	       }
+	       
+	       
+	       
        }
        
        void MoveLeftRight(float x)
        {
-	       if (push)
+	       if (push&&!isdown)
 	       {
 		       if (!isWalling)
 		       {
-			       if (x < 0)
+			       if (Input.GetKeyDown("left"))
 			       {
 				       if (line == 0)
 				       {
@@ -113,7 +132,7 @@ public class PlayerMove : MonoBehaviour
 				       }
 			       }
 
-			       else if (x > 0)
+			       else if (Input.GetKeyDown("right"))
 			       {
 				       if (line == 0)
 				       {
@@ -134,13 +153,14 @@ public class PlayerMove : MonoBehaviour
 		       }
 		       else
 		       {
-			       if (x < 0)
+			       if (Input.GetKeyDown("left"))
 			       {
 				       if (line == 0)
 				       {
 					       characterController.Move(new Vector3(3.5f, 0, 0));
 					       line = -1;
 					       currentTime = 1f;
+					       ui.GetComponent<UI>().MessageWallText("3");
 					       isWalling = true;
 					       push = false;
 
@@ -152,12 +172,13 @@ public class PlayerMove : MonoBehaviour
 					       characterController.Move(new Vector3(7f, 0, 0));
 					       line = -1;
 					       currentTime = 1f;
+					       ui.GetComponent<UI>().MessageWallText("3");
 					       isWalling = true;
 					       push = false;
 				       }
 			       }
 
-			       else if (x > 0)
+			       else if (Input.GetKeyDown("right"))
 			       {
 				       if (line == 0)
 				       {
@@ -165,6 +186,7 @@ public class PlayerMove : MonoBehaviour
 					       characterController.Move(new Vector3(-3.5f, 0, 0));
 					       line = 1;
 					       currentTime = 1f;
+					       ui.GetComponent<UI>().MessageWallText("3");
 					       isWalling = true;
 					       push = false;
 				       }
@@ -175,6 +197,7 @@ public class PlayerMove : MonoBehaviour
 					       characterController.Move(new Vector3(-7f, 0, 0));
 					       line = 1;
 					       currentTime = 1f;
+					       ui.GetComponent<UI>().MessageWallText("3");
 					       isWalling = true;
 					       push = false;
 				       }
@@ -190,45 +213,52 @@ public class PlayerMove : MonoBehaviour
 
        void CheckJump(bool isGrounded)
        {
-	       if (!isWalling)
-	       {
-		       if (isGrounded && Input.GetButtonDown("Jump"))
+
+		       if (!isWalling&&!isdown)
 		       {
+			       if (isGrounded && Input.GetButtonDown("Jump"))
+			       {
 		       
-			       velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
+				       velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
+			       }
+			       characterController.Move(velocity*Time.deltaTime);
 		       }
-		       characterController.Move(velocity*Time.deltaTime);
-	       }
-	       
+
+		       
+
+
+
+
        }
 
        void GoDown()
        {
-	       if (Input.GetButtonDown("Fire1"))
+	       if (!isWalling)
 	       {
-		       if (rotatecounter == 0)
+		       if (Input.GetKeyDown("down"))
 		       {
-			       this.transform.Rotate(90, 0, 0);
-			       characterController.height = 1f;
-			       characterController.Move(new Vector3(0, -1, 0));
-			       rotatecounter = 1;
+			       if (!isdown)
+			       {
+				       this.transform.Rotate(90, 0, 0);
+				       characterController.height = 1f;
+				       characterController.Move(new Vector3(0, -1, 0));
+				       isdown = true;   
+			       }
+
+				       
+				       
 		       }
-		       else
-		       {
-			       this.transform.Rotate(-90, 0, 0);
-			       characterController.height = 2f;
-			       rotatecounter = 0;
-		       }
-		       
-		       
 	       }
+	      
+	       if(isdown)
+		       characterController.Move(velocity*Time.deltaTime);
        }
 
        void WalkWall(float x)
        {
-	       if (push)
+	       if (push&&!isdown&&!isFalling)
 	       {
-		       if (x < 0)
+		       if (Input.GetKeyDown("left"))
 		       {
 			       if (line == -1)
 			       {
@@ -238,9 +268,9 @@ public class PlayerMove : MonoBehaviour
 					       f = 0.5f;
 					       if (target.position.y < 3)
 					       {
-						       velocity.y = Mathf.Sqrt(3f * -2 * gravity);
-						       characterController.Move(velocity*Time.deltaTime);
-						       characterController.Move(new Vector3(f, 0, 0));
+						       /*velocity.y = Mathf.Sqrt(3f * -2 * gravity);
+						       characterController.Move(velocity*Time.deltaTime);*/
+						       characterController.Move(new Vector3(f, 2.5f, 0));
 						       isWalling = true;
 					       }
 					       
@@ -252,7 +282,7 @@ public class PlayerMove : MonoBehaviour
 			       }
 		       }
 
-		       else if (x > 0)
+		       else if (Input.GetKeyDown("right"))
 		       {
 			       if (line == 1)
 			       {
@@ -263,9 +293,9 @@ public class PlayerMove : MonoBehaviour
 					       f = -0.5f;
 					       if (target.position.y < 3)
 					       {
-						       velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
-						       characterController.Move(velocity*Time.deltaTime);
-						       characterController.Move(new Vector3(f, 0, 0));
+						       /*velocity.y = Mathf.Sqrt(3f * -2 * gravity);
+						       characterController.Move(velocity*Time.deltaTime);*/
+						       characterController.Move(new Vector3(f, 2.5f, 0));
 						       isWalling = true;
 					       }
 				       }
@@ -283,17 +313,60 @@ public class PlayerMove : MonoBehaviour
        {
 	       bool isWallLeft = Physics.CheckSphere(wallcheckleft.position, 0.4f, wallLayers);
 	       bool isWallRight = Physics.CheckSphere(wallcheckright.position, 0.4f, wallLayers);
+	       if (isGrounded)
+	       {
+		       currentTime = 1f;
+		       ui.GetComponent<UI>().MessageWallText("3");
+	       }
 	       if (isWalling)
 	       {
 		       currentTime -= 1 * Time.deltaTime;
+
+		       
+			       
 		       if (currentTime <= 0f)
 		       {
+			       isFalling = true;
 			       isWalling = false;
 			       currentTime = 1f;
+			       ui.GetComponent<UI>().MessageWallText("3");
+		       }
+		       else if (currentTime <= 0.33f)
+		       {
+			       ui.GetComponent<UI>().MessageWallText("1");  
+		       }
+		       else if (currentTime <= 0.66f)
+		       {
+			       ui.GetComponent<UI>().MessageWallText("2");
 		       }
 	       }
 
 	       if (!(isWallLeft || isWallRight))
 		       isWalling = false;
        }
+
+       void CheckDown()
+       {
+	       if (isdown)
+	       {
+		       downcurrentTime -= 1 * Time.deltaTime;
+		       if (downcurrentTime <= 0f)
+		       {
+			       this.transform.Rotate(-90, 0, 0);
+			       characterController.height = 2f;
+			       isdown = false;
+			       downcurrentTime = 1f;
+		       }
+	       }
+       }
+
+       void CheckFalling()
+       {
+	       if (isGrounded)
+		       isFalling = false;
+       }
+       
+       
+       
+       
 }
