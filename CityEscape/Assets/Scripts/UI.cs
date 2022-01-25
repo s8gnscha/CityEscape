@@ -9,13 +9,22 @@ public class UI : MonoBehaviour
     public Text goal;
     public Text hit;
 	public Text wallText;
-
+	public Text counterText;
+	private int hitcounter;
+	private float currentTime;
     void Start()
     {
+		currentTime=2f;
+		hitcounter=0;
         goal.text = "";
         hit.text = "";
 		wallText.text="3";
+		counterText.text="HitCounter:"+hitcounter;
     }
+
+	void Update(){
+	currentTime -= 1 * Time.deltaTime;
+	}
     public void Quit()
     {
         Application.Quit();
@@ -28,7 +37,11 @@ public class UI : MonoBehaviour
 
     public void MessageHit()
     {
+		if(currentTime<=0f){
         StartCoroutine(Hit());
+		hitcounter++;
+		counterText.text="HitCounter:"+hitcounter;
+}
     }
     
     public void MessageGoal()
@@ -43,6 +56,7 @@ public class UI : MonoBehaviour
     
     IEnumerator Hit()
     {
+
         hit.text = "HIT";
         yield return new WaitForSeconds(0.5f);
         hit.text = "";
