@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 /**
@@ -37,38 +38,54 @@ public class PlayerMove : MonoBehaviour
 
 	public Transform wallcheckleft;
 	public Transform wallcheckright;
-	
-	private int rotatecounter;
+
+	private bool climb;
 
 	private int horizontalInput;
 
 	private float currentTime;
 
+	
+
 	private float downcurrentTime;
 
 	private bool isFalling;
-	private bool groundspawn;
+
+
+	
 
 	private Vector3 spawnPosition;
-	private bool[] checkpoints=new bool[3];
+	private bool[] checkpoints=new bool[4];
+
+	public Slider runbar;
+	public Gradient gradient;
+	public Image fill;
+
+	public GameObject swipeManager;
+
+	private Vector3 targetPosition;
 
 	private float f;
     void Start()
     {
 	    isFalling = false;
 	    horizontalInput = -10;
-        rotatecounter=0;
+	     targetPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
 	    isWalling = false;
+	    climb = false;
 	    push = true;
 	    line = 0;
 	    currentTime = 2f;
+	    
 	    downcurrentTime = 1f;
 	    characterController= GetComponent<CharacterController>();
 	    hero.GetComponent<Renderer>().material.SetColor("_Color", Color.blue);
 	    isdown = false;
-	    groundspawn = false;
+	    
 
-	    for (int i = 0; i < 3; i++)
+	    fill.color = gradient.Evaluate(1f);
+
+	    for (int i = 0; i < 4; i++)
 	    {
 		    checkpoints[i] = false;
 	    }
@@ -84,18 +101,25 @@ public class PlayerMove : MonoBehaviour
        {
 	       float x = Input.GetAxis("Horizontal");
 	       isGrounded = Physics.CheckSphere(groundcheck.position, 0.4f, groundLayers)||Physics.CheckSphere(groundcheckfront.position, 0.4f, groundLayers);
-	       //Debug.Log(groundspawn);
-		       
+	       
+	       MoveLeftRight(x);
 	       Gravity(isGrounded);
 	       WalkWall(x);
 	       CheckWallWalking();
-	       MoveForward();
-	       MoveLeftRight(x);
 	       CheckJump(isGrounded);
 	       CheckDown();
 	       GoDown();
 	       CheckFalling();
 
+
+	       //Debug.Log(isWalling);
+	       //Debug.Log(isGrounded);
+	       Debug.Log(targetPosition.x);
+       }
+
+       void FixedUpdate()
+       {
+	       MoveForward();
        }
 
 
@@ -114,67 +138,109 @@ public class PlayerMove : MonoBehaviour
 	       }
 	       else
 	       {
-
 		       velocity.y += gravity * Time.deltaTime;
 	       }
+
 	       
-	       
-	       
+
        }
        
        void MoveLeftRight(float x)
        {
-	       if (!isdown&&!isFalling)
+	       targetPosition.y = transform.position.y;
+	       targetPosition.z = transform.position.z;
+	       if (!isFalling&&((transform.position.x-targetPosition.x)*(transform.position.x-targetPosition.x)<0.1f))
 	       {
 		       if (!isWalling)
 		       {
-			       if (Input.GetKeyDown("left"))
+			       if(SwipeManager.swipeLeft||Input.GetKeyDown("left"))//if (Input.GetKeyDown("left"))
 			       {
 				       if (line == 0)
 				       {
-					       characterController.Move(new Vector3(3f, 0, 0));
+					      //characterController.Move(new Vector3(3f, 0, 0));
+					       
+					      targetPosition += Vector3.right * 3f;
 					       line = -1;
-					     
+					       if (isdown)
+					       {
+						       this.transform.Rotate(-90, 0, 0);
+						       characterController.height = 2f;
+						       isdown = false;
+						       downcurrentTime = 1f;
+					       }
 
 				       }
 
 				       else if (line == 1)
 				       {
-
-					       characterController.Move(new Vector3(3f, 0, 0));
+					       
+					       //characterController.Move(new Vector3(3f, 0, 0));
+					       
+					       
+					     
 					       line = 0;
-					      
+					       if (isdown)
+					       {
+						       this.transform.Rotate(-90, 0, 0);
+						       characterController.height = 2f;
+						       isdown = false;
+						       downcurrentTime = 1f;
+					       }
+					       targetPosition += Vector3.right * 3f;
 				       }
 			       }
 
-			       else if (Input.GetKeyDown("right"))
+			       else if(SwipeManager.swipeRight||Input.GetKeyDown("right"))//if (Input.GetKeyDown("right"))
 			       {
 				       if (line == 0)
 				       {
-
-					       characterController.Move(new Vector3(-3f, 0, 0));
-					       line = 1;
 					       
+					      //characterController.Move(new Vector3(-3f, 0, 0));
+					       
+					      
+				
+					       line = 1;
+					       if (isdown)
+					       {
+						       this.transform.Rotate(-90, 0, 0);
+						       characterController.height = 2f;
+						       isdown = false;
+						       downcurrentTime = 1f;
+					       }
+					       targetPosition += Vector3.left * 3f;
 				       }
 
 				       else if (line == -1)
 				       {
 
-					       characterController.Move(new Vector3(-3f, 0, 0));
+					       //characterController.Move(new Vector3(-3f, 0, 0));
+					       
+					       
+					 
 					       line = 0;
-					      
+					       if (isdown)
+					       {
+						       this.transform.Rotate(-90, 0, 0);
+						       characterController.height = 2f;
+						       isdown = false;
+						       downcurrentTime = 1f;
+					       }
+					       targetPosition += Vector3.left * 3f;
 				       }
 			       }
 		       }
 		       else
 		       {
-			       if (Input.GetKeyDown("left"))
+			       if (SwipeManager.swipeLeft||Input.GetKeyDown("left"))//(Input.GetKeyDown("left"))
 			       {
 				       if (line == 0)
 				       {
-					       characterController.Move(new Vector3(3f, 0, 0));
+					       //characterController.Move(new Vector3(3f, 0, 0));
+					       targetPosition += Vector3.right * 3f;
 					       line = -1;
 					       currentTime = 2f;
+					       runbar.normalizedValue = currentTime;
+					       fill.color = gradient.Evaluate(runbar.normalizedValue);
 					       ui.GetComponent<UI>().MessageWallText("Wallrun:3");
 					       isWalling = true;
 					      
@@ -185,20 +251,27 @@ public class PlayerMove : MonoBehaviour
 				       {
 
 					       //characterController.Move(new Vector3(7f, 0, 0));
-					       StartCoroutine(JumpWallLeft());
-					       
-					      
+					       //StartCoroutine(JumpWallLeft());
+					       targetPosition += Vector3.right * 6.8f;
+					       line = -1;
+					       currentTime = 2f;
+					       runbar.normalizedValue = currentTime;
+					       fill.color = gradient.Evaluate(runbar.normalizedValue);
+					       isWalling = true;
 				       }
 			       }
 
-			       else if (Input.GetKeyDown("right"))
+			       else if (SwipeManager.swipeRight||Input.GetKeyDown("right"))//(Input.GetKeyDown("right"))
 			       {
 				       if (line == 0)
 				       {
 
-					       characterController.Move(new Vector3(-3f, 0, 0));
+					       //characterController.Move(new Vector3(-3f, 0, 0));
+					       targetPosition += Vector3.left * 3f;
 					       line = 1;
 					       currentTime = 2f;
+					       runbar.normalizedValue = currentTime;
+					       fill.color = gradient.Evaluate(runbar.normalizedValue);
 					       ui.GetComponent<UI>().MessageWallText("Wallrun:3");
 					       isWalling = true;
 					       
@@ -208,49 +281,46 @@ public class PlayerMove : MonoBehaviour
 				       {
 
 					       //characterController.Move(new Vector3(-7f, 0, 0));
-					       StartCoroutine(JumpWallRight());
-					      
-					       
+					       //StartCoroutine(JumpWallRight());
+					       targetPosition += Vector3.left * 6.8f;
+					       line = 1;
+					       currentTime = 2f;
+					       runbar.normalizedValue = currentTime;
+					       fill.color = gradient.Evaluate(runbar.normalizedValue);
+					       isWalling = true;
 				       }
 			       }
 		       }
+		       
 	       }
 
 
+	       
+	       
+	       if (transform.position.x != targetPosition.x)
+	       {
+		       Vector3 diff = targetPosition - transform.position;
+		       Vector3 moveDir = diff.normalized * 30 * Time.deltaTime;
+		       if (moveDir.sqrMagnitude < diff.magnitude)
+			       characterController.Move(moveDir);
+		       else
+			       characterController.Move(diff);
+	       }
+
+
+
+
+
        }
        
-       IEnumerator JumpWallRight()
-       {
-	       characterController.Move(new Vector3(-3f, 0, 0));
-	       
-	       yield return new WaitForSeconds(0.1f);
-	       characterController.Move(new Vector3(-4f, 0, 0));
-	       line = 1;
-	       currentTime = 2f;
-	       ui.GetComponent<UI>().MessageWallText("Wallrun:3");
-	       isWalling = true;
-	       isFalling = false;
-       }
-       
-       IEnumerator JumpWallLeft()
-       {
-	       characterController.Move(new Vector3(3f, 0, 0));
-	       
-	       yield return new WaitForSeconds(0.1f);
-	       characterController.Move(new Vector3(4f, 0, 0));
-	       line = -1;
-	       currentTime = 2f;
-	       ui.GetComponent<UI>().MessageWallText("Wallrun:3");
-	       isWalling = true;
-	       isFalling = false;
-       }
+      
 
        void CheckJump(bool isGrounded)
        {
 
 		       if (!isWalling&&!isdown)
 		       {
-			       if (isGrounded && (Input.GetButtonDown("Jump")||Input.GetKeyDown("up")))
+			       if (isGrounded && (SwipeManager.swipeUp||Input.GetKeyDown("up")))
 			       {
 
 
@@ -259,8 +329,11 @@ public class PlayerMove : MonoBehaviour
 				       
 			       }
 			       characterController.Move(velocity*Time.deltaTime);
-			       if(target.position.y>2.1f)
+			       if (target.position.y > 2.1f)
+			       {
+				      
 				       isFalling = true;
+			       }
 		       }
 
 		       
@@ -274,7 +347,7 @@ public class PlayerMove : MonoBehaviour
        {
 	       if (!isWalling&&isGrounded)
 	       {
-		       if (Input.GetKeyDown("down"))
+		       if (SwipeManager.swipeDown||Input.GetKeyDown("down"))//(Input.GetKeyDown("down"))
 		       {
 			       if (!isdown)
 			       {
@@ -283,93 +356,112 @@ public class PlayerMove : MonoBehaviour
 				       characterController.Move(new Vector3(0, -1, 0));
 				       isdown = true;   
 			       }
-
+			       
 				       
 				       
 		       }
 	       }
-	      
-	       if(isdown)
+
+	       if (isdown)
+	       {
 		       characterController.Move(velocity*Time.deltaTime);
+	       }
+	      
+
        }
 
        void WalkWall(float x)
        {
 	       if (push&&!isdown&&isGrounded)
 	       {
-		       if (Input.GetKeyDown("left"))
+		       if (SwipeManager.swipeLeft||Input.GetKeyDown("left"))//(Input.GetKeyDown("left"))
 		       {
 			       if (line == -1)
 			       {
-				       bool isWallLeft = Physics.CheckSphere(wallcheckleft.position, 0.9f, wallLayers);
+				       bool isWallLeft = Physics.CheckSphere(wallcheckleft.position, 0.55f, wallLayers);
 				       if (isWallLeft)
 				       {
-					       f = 0.5f;
+					       
 					       if (target.position.y < 3)
 					       {
-						       /*velocity.y = Mathf.Sqrt(3f * -2 * gravity);
-						       characterController.Move(velocity*Time.deltaTime);*/
-						       characterController.Move(new Vector3(f, 2.5f, 0));
+
+						      
+						       targetPosition.x = 7.4f;
+						       characterController.Move(new Vector3(0, 2.5f, 0));
+						       
 						       isWalling = true;
 					       }
 					       
 				       }
 				       else
 				       {
+					       
 					       isWalling = false;
 				       }
 			       }
 		       }
 
-		       else if (Input.GetKeyDown("right"))
+		       else if (SwipeManager.swipeRight||Input.GetKeyDown("right"))//(Input.GetKeyDown("right"))
 		       {
 			       if (line == 1)
 			       {
-				       bool isWallRight = Physics.CheckSphere(wallcheckright.position, 0.9f, wallLayers);
+				       bool isWallRight = Physics.CheckSphere(wallcheckright.position, 0.55f, wallLayers);
 				       if (isWallRight)
 				       {
 
-					       f = -0.5f;
+					       
 					       if (target.position.y < 3)
 					       {
-						       /*velocity.y = Mathf.Sqrt(3f * -2 * gravity);
-						       characterController.Move(velocity*Time.deltaTime);*/
-						       characterController.Move(new Vector3(f, 2.5f, 0));
+						       targetPosition.x = 0.6f;
+						       
+						       characterController.Move(new Vector3(0, 2.5f, 0));
+						       
 						       isWalling = true;
 					       }
 				       }
 				       else
 				       {
+					       
 					       isWalling = false;
 				       }
 			       }
 			      
 		       }
 	       }
+	       
+	     
        }
 
        void CheckWallWalking()
        {
-	       bool isWallLeft = Physics.CheckSphere(wallcheckleft.position, 0.7f, wallLayers);
-	       bool isWallRight = Physics.CheckSphere(wallcheckright.position, 0.7f, wallLayers);
+	       bool isWallLeft = Physics.CheckSphere(wallcheckleft.position, 0.55f, wallLayers);
+	       bool isWallRight = Physics.CheckSphere(wallcheckright.position, 0.55f, wallLayers);
 	       if (isGrounded)
 	       {
 		       currentTime = 2f;
+		       runbar.normalizedValue = currentTime;
+		       fill.color = gradient.Evaluate(runbar.normalizedValue);
 		       ui.GetComponent<UI>().MessageWallText("Wallrun:3");
 		       hero.GetComponent<Renderer>().material.SetColor("_Color", Color.blue);
 	       }
 	       if (isWalling)
 	       {
+		      
 		       currentTime -= 1 * Time.deltaTime;
+		       
+		       runbar.value = currentTime;
+		       fill.color = gradient.Evaluate(runbar.normalizedValue);
 
 		       hero.GetComponent<Renderer>().material.SetColor("_Color", Color.green);
 		       
 			       
 		       if (currentTime <= 0f)
 		       {
+			       
 			       isFalling = true;
 			       isWalling = false;
 			       currentTime = 2f;
+
 			       ui.GetComponent<UI>().MessageWallText("Wallrun:0");
 			       hero.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
 		       }
@@ -386,26 +478,38 @@ public class PlayerMove : MonoBehaviour
 	       }
 	       else
 	       {
-		       
-		       if (target.position.x > 7f)
+		       if (isGrounded)
 		       {
-			       float f = target.position.x - 7;
-			       characterController.Move(new Vector3(-f, 0, 0));
+			       if (target.position.x > 7f)
+			       {
+				       targetPosition.x = 7f;
+			       }
+			       else if (target.position.x < 1f)
+			       {
+				       targetPosition.x = 1f;
+			       }
+
+			      
 		       }
-		       else if (target.position.x < 1f)
-		       {
-			       float f = 1 - target.position.x;
-			       characterController.Move(new Vector3(f, 0, 0));
-		       }
-			       
-			       
+
+
 	       }
 
-	       if (!(isWallLeft || isWallRight))
-		       isWalling = false;
-	       
-	       
-	       
+	       if ((transform.position.x-targetPosition.x)*(transform.position.x-targetPosition.x)<0.1f)
+	       {
+		       if (!(isWallLeft || isWallRight))
+		       {
+			       isWalling = false;
+			       hero.GetComponent<Renderer>().material.SetColor("_Color", Color.blue);
+		       }
+	       }
+
+
+
+
+
+
+
        }
 
        void CheckDown()
@@ -413,7 +517,7 @@ public class PlayerMove : MonoBehaviour
 	       if (isdown)
 	       {
 		       downcurrentTime -= 1 * Time.deltaTime;
-		       if (downcurrentTime <= 0f||Input.GetKeyDown("up"))
+		       if (downcurrentTime <= 0f||SwipeManager.swipeUp||Input.GetKeyDown("up"))//(downcurrentTime <= 0f||Input.GetKeyDown("up"))
 		       {
 			       this.transform.Rotate(-90, 0, 0);
 			       characterController.height = 2f;
@@ -435,23 +539,33 @@ public class PlayerMove : MonoBehaviour
        public void SetSpawn()
        {
 
-
-	        if (checkpoints[2])
+	       if (checkpoints[3])
 	       {
+		       
 		       characterController.enabled = false;
 		       target.transform.position=new Vector3(4, 2, 200);
 		       characterController.enabled = true;
+		       targetPosition.x = 4;
 		       line=0;
 		       for (int i = 0; i < 3; i++)
 		       {
 			       checkpoints[i] = false;
-		       }
+		       }  
+	       }
+	       else if (checkpoints[2])
+	       {
+		       characterController.enabled = false;
+		       target.transform.position=new Vector3(4, 2, -350);
+		       characterController.enabled = true;
+		       targetPosition.x = 4;
+		       line=0;
 	       }
 	       else if (checkpoints[1])
 	       {
 		       characterController.enabled = false;
 		       target.transform.position=new Vector3(4, 2,-202);
 		       characterController.enabled = true;
+		       targetPosition.x = 4;
 		       line=0;
 	       }
 	        else if (checkpoints[0])
@@ -459,6 +573,7 @@ public class PlayerMove : MonoBehaviour
 		       characterController.enabled = false;
 		       target.transform.position=new Vector3(4, 2, -100);
 		       characterController.enabled = true;
+		       targetPosition.x = 4;
 		       line=0;
 	       }
        }
@@ -466,6 +581,35 @@ public class PlayerMove : MonoBehaviour
        public void SetCheckpoint(int checkpoint)
        {
 	       checkpoints[checkpoint - 1] = true;
+       }
+
+
+       public void GoToWallrun()
+       {
+	       characterController.enabled = false;
+	       target.transform.position=new Vector3(4, 2, -325);
+	       characterController.enabled = true;
+	       targetPosition.x = 4;
+	       line=0;
+       }
+
+
+       void SmoothMove(Vector3 position1,Vector3 position2)
+       {
+	       if (position1 != position2)
+	       {
+		       Vector3 diff = position2 - position1;
+		       Vector3 moveDir = diff.normalized * 30 * Time.deltaTime;
+		       if (moveDir.sqrMagnitude < diff.magnitude)
+			       characterController.Move(moveDir);
+		       else
+			       characterController.Move(diff);
+	       }
+	       else
+	       {
+		       climb = false;
+	       }
+	       
        }
        
 }
