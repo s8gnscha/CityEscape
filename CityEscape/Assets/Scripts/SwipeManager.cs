@@ -53,7 +53,7 @@ public class SwipeManager : MonoBehaviour
         }
 
         //Did we cross the distance?
-        if (swipeDelta.magnitude > 100)
+        if (swipeDelta.magnitude > 150)
         {
             //Which direction?
             float x = swipeDelta.x;
@@ -62,20 +62,37 @@ public class SwipeManager : MonoBehaviour
             {
                 //Left or Right
                 if (x < 0)
+                {
                     swipeLeft = true;
+                    startTouch= Input.touches[0].position;
+                    startTouch = Input.mousePosition;
+                }
                 else
+                {
                     swipeRight = true;
+                    startTouch= Input.touches[0].position;
+                    startTouch = Input.mousePosition;
+                }
             }
             else
             {
                 //Up or Down
                 if (y < 0)
+                {
                     swipeDown = true;
+                    startTouch= Input.touches[0].position;
+                    startTouch = Input.mousePosition;
+                }
                 else
+                {
                     swipeUp = true;
+                    startTouch= Input.touches[0].position;
+                    startTouch = Input.mousePosition;
+                }
             }
 
-            Reset();
+            
+
         }
 
     }

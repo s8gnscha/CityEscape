@@ -65,6 +65,8 @@ public class PlayerMove : MonoBehaviour
 
 	private Vector3 targetPosition;
 
+	private bool leftrightmove;
+
 	private float f;
     void Start()
     {
@@ -76,7 +78,7 @@ public class PlayerMove : MonoBehaviour
 	    push = true;
 	    line = 0;
 	    currentTime = 2f;
-	    
+	    leftrightmove = true;
 	    downcurrentTime = 1f;
 	    characterController= GetComponent<CharacterController>();
 	    hero.GetComponent<Renderer>().material.SetColor("_Color", Color.blue);
@@ -101,16 +103,18 @@ public class PlayerMove : MonoBehaviour
        {
 	       float x = Input.GetAxis("Horizontal");
 	       isGrounded = Physics.CheckSphere(groundcheck.position, 0.4f, groundLayers)||Physics.CheckSphere(groundcheckfront.position, 0.4f, groundLayers);
-	       
-	       MoveLeftRight(x);
-	       Gravity(isGrounded);
-	       WalkWall(x);
-	       CheckWallWalking();
-	       CheckJump(isGrounded);
-	       CheckDown();
-	       GoDown();
-	       CheckFalling();
 
+	       if (leftrightmove)
+	       {
+		       MoveLeftRight(x);
+		       Gravity(isGrounded);
+		       WalkWall(x);
+		       CheckWallWalking();
+		       CheckJump(isGrounded);
+		       CheckDown();
+		       GoDown();
+		       CheckFalling();
+	       }
 
 	       //Debug.Log(isWalling);
 	       //Debug.Log(isGrounded);
@@ -127,7 +131,10 @@ public class PlayerMove : MonoBehaviour
        {
 	       
 	       //transform.forward = new Vector3(horizontalInput, 0, Mathf.Abs(horizontalInput) - 1);
-	       characterController.Move(new Vector3(0, 0, horizontalInput) * Time.deltaTime);
+	       if (leftrightmove)
+	       {
+		       characterController.Move(new Vector3(0, 0, horizontalInput) * Time.deltaTime);
+	       }
        }
        void Gravity(bool isGrounded)
        {
@@ -295,17 +302,20 @@ public class PlayerMove : MonoBehaviour
 	       }
 
 
-	       
-	       
-	       if (transform.position.x != targetPosition.x)
+	       if (leftrightmove)
 	       {
-		       Vector3 diff = targetPosition - transform.position;
-		       Vector3 moveDir = diff.normalized * 30 * Time.deltaTime;
-		       if (moveDir.sqrMagnitude < diff.magnitude)
-			       characterController.Move(moveDir);
-		       else
-			       characterController.Move(diff);
+		       if (transform.position.x != targetPosition.x)
+		       {
+			       Vector3 diff = targetPosition - transform.position;
+			       Vector3 moveDir = diff.normalized * 30 * Time.deltaTime;
+			       if (moveDir.sqrMagnitude < diff.magnitude)
+				       characterController.Move(moveDir);
+			       else
+				       characterController.Move(diff);
+		       }
 	       }
+	       
+	       
 
 
 
@@ -455,7 +465,7 @@ public class PlayerMove : MonoBehaviour
 		       hero.GetComponent<Renderer>().material.SetColor("_Color", Color.green);
 		       
 			       
-		       if (currentTime <= 0f)
+		       if (currentTime <= 0f||SwipeManager.swipeDown)
 		       {
 			       
 			       isFalling = true;
@@ -610,6 +620,19 @@ public class PlayerMove : MonoBehaviour
 		       climb = false;
 	       }
 	       
+       }
+
+      public void ShowHit()
+       {
+	       StartCoroutine(HitAnimation());
+
+       }
+
+       IEnumerator HitAnimation()
+       {
+	       leftrightmove = false;
+	       yield return new WaitForSeconds(0.5f);
+	       leftrightmove = true;
        }
        
 }
