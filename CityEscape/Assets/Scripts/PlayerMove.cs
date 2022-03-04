@@ -116,9 +116,10 @@ public class PlayerMove : MonoBehaviour
 		       CheckFalling();
 	       }
 
+	       
+	       //Debug.Log(targetPosition.x);
+	       //Debug.Log(isFalling);
 	       //Debug.Log(isWalling);
-	       //Debug.Log(isGrounded);
-	       Debug.Log(targetPosition.x);
        }
 
        void FixedUpdate()
@@ -150,13 +151,15 @@ public class PlayerMove : MonoBehaviour
 
 	       
 
+
+
        }
        
        void MoveLeftRight(float x)
        {
 	       targetPosition.y = transform.position.y;
 	       targetPosition.z = transform.position.z;
-	       if (!isFalling&&((transform.position.x-targetPosition.x)*(transform.position.x-targetPosition.x)<0.1f))
+	       if (!isFalling)//&&((transform.position.x-targetPosition.x)*(transform.position.x-targetPosition.x)<0.1f))
 	       {
 		       if (!isWalling)
 		       {
@@ -259,7 +262,7 @@ public class PlayerMove : MonoBehaviour
 
 					       //characterController.Move(new Vector3(7f, 0, 0));
 					       //StartCoroutine(JumpWallLeft());
-					       targetPosition += Vector3.right * 6.8f;
+					       targetPosition += Vector3.right * 6f;
 					       line = -1;
 					       currentTime = 2f;
 					       runbar.normalizedValue = currentTime;
@@ -289,7 +292,7 @@ public class PlayerMove : MonoBehaviour
 
 					       //characterController.Move(new Vector3(-7f, 0, 0));
 					       //StartCoroutine(JumpWallRight());
-					       targetPosition += Vector3.left * 6.8f;
+					       targetPosition += Vector3.left * 6;
 					       line = 1;
 					       currentTime = 2f;
 					       runbar.normalizedValue = currentTime;
@@ -388,19 +391,18 @@ public class PlayerMove : MonoBehaviour
 		       {
 			       if (line == -1)
 			       {
-				       bool isWallLeft = Physics.CheckSphere(wallcheckleft.position, 0.55f, wallLayers);
+				       bool isWallLeft = Physics.CheckSphere(wallcheckleft.position, 1f, wallLayers);
 				       if (isWallLeft)
 				       {
 					       
-					       if (target.position.y < 3)
-					       {
+					       
 
 						      
-						       targetPosition.x = 7.4f;
+						       
 						       characterController.Move(new Vector3(0, 2.5f, 0));
 						       
 						       isWalling = true;
-					       }
+					       
 					       
 				       }
 				       else
@@ -415,19 +417,18 @@ public class PlayerMove : MonoBehaviour
 		       {
 			       if (line == 1)
 			       {
-				       bool isWallRight = Physics.CheckSphere(wallcheckright.position, 0.55f, wallLayers);
+				       bool isWallRight = Physics.CheckSphere(wallcheckright.position, 1f, wallLayers);
 				       if (isWallRight)
 				       {
 
 					       
-					       if (target.position.y < 3)
-					       {
-						       targetPosition.x = 0.6f;
+					       
+						       
 						       
 						       characterController.Move(new Vector3(0, 2.5f, 0));
 						       
 						       isWalling = true;
-					       }
+					       
 				       }
 				       else
 				       {
@@ -444,8 +445,8 @@ public class PlayerMove : MonoBehaviour
 
        void CheckWallWalking()
        {
-	       bool isWallLeft = Physics.CheckSphere(wallcheckleft.position, 0.55f, wallLayers);
-	       bool isWallRight = Physics.CheckSphere(wallcheckright.position, 0.55f, wallLayers);
+	       bool isWallLeft = Physics.CheckSphere(wallcheckleft.position, 0.7f, wallLayers);
+	       bool isWallRight = Physics.CheckSphere(wallcheckright.position, 0.7f, wallLayers);
 	       if (isGrounded)
 	       {
 		       currentTime = 2f;
@@ -488,7 +489,7 @@ public class PlayerMove : MonoBehaviour
 	       }
 	       else
 	       {
-		       if (isGrounded)
+		       /*if (isGrounded)
 		       {
 			       if (target.position.x > 7f)
 			       {
@@ -500,7 +501,7 @@ public class PlayerMove : MonoBehaviour
 			       }
 
 			      
-		       }
+		       }*/
 
 
 	       }

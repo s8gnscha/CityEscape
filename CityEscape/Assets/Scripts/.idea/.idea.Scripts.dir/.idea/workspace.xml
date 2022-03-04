@@ -3,18 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="49003cfd-712f-4f11-a425-5477ee125fd9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../../.idea/.idea.CityEscape-1.0.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/.idea.CityEscape-1.0.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Materials/Ground.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Materials/Ground.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Materials/Obstacle.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Materials/Obstacle.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Materials/Player.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Materials/Player.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefabs/Tiles/StandardTile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Prefabs/Tiles/StandardTile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefabs/Tiles/Tile1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Prefabs/Tiles/Tile1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefabs/Tiles/Tile2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Prefabs/Tiles/Tile2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefabs/Tiles/Tile3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Prefabs/Tiles/Tile3.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scenes/StudyScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/StudyScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Obstacle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Obstacle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CameraMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CameraMove.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PlayerMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PlayerMove.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SwipeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SwipeManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProjectSettings/InputManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TriggerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TriggerManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +29,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/PlayerMove.cs" />
         <option value="$PROJECT_DIR$/CameraMove.cs" />
+        <option value="$PROJECT_DIR$/PlayerMove.cs" />
         <option value="$PROJECT_DIR$/TriggerManager.cs" />
       </list>
     </option>
@@ -60,6 +58,7 @@
       <workItem from="1639050573458" duration="4920000" />
       <workItem from="1641988212528" duration="1544000" />
       <workItem from="1646053050359" duration="768000" />
+      <workItem from="1646302734920" duration="8799000" />
     </task>
     <servers />
   </component>

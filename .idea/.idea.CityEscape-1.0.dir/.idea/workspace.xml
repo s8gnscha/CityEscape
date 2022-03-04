@@ -12,18 +12,16 @@
   <component name="ChangeListManager">
     <list default="true" id="9918b46d-36c8-4628-bb73-638ecaf2b918" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CityEscape-1.0.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CityEscape-1.0.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Ground.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Ground.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Obstacle.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Obstacle.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Player.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Player.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/StandardTile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/StandardTile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile3.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Scenes/StudyScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Scenes/StudyScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Scripts/.idea/.idea.Scripts.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Scripts/.idea/.idea.Scripts.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Scripts/Obstacle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Scripts/Obstacle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Scripts/CameraMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Scripts/CameraMove.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Scripts/PlayerMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Scripts/PlayerMove.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Scripts/SwipeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Scripts/SwipeManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/ProjectSettings/InputManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Scripts/TriggerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Scripts/TriggerManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +36,7 @@
     <setting file="file://$PROJECT_DIR$/CityEscape/Assets/Scripts/CheckPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Unity/Medienprojekt/Assets/Medienprojekt/Scripts/Maingame/Countdown/CountDownPlane.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Unity/Medienprojekt/Assets/Medienprojekt/Scripts/Maingame/Game/GameplayInput/Player.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/CityEscape/Assets/Scripts/TriggerManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CityEscape/Assets/Scripts/TriggerManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Interactive Systems Project/Assets/Scripts/MovePlanchette.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CityEscape/Assets/Scripts/PlayerMove.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CityEscape/Assets/Scripts/SwipeManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -56,12 +54,12 @@
         <option value="$PROJECT_DIR$/CityEscape/Assets/Scripts/UI.cs" />
         <option value="$PROJECT_DIR$/CityEscape/Assets/Scripts/SpawnTrigger.cs" />
         <option value="$PROJECT_DIR$/CityEscape/Assets/Scripts/CheckPoint.cs" />
-        <option value="$PROJECT_DIR$/CityEscape/Assets/Scripts/CameraMove.cs" />
         <option value="$PROJECT_DIR$/CityEscape/Assets/Scripts/Goal.cs" />
         <option value="$PROJECT_DIR$/CityEscape/Assets/Scripts/SwipeManager.cs" />
         <option value="$PROJECT_DIR$/CityEscape/Assets/Scripts/Obstacle.cs" />
-        <option value="$PROJECT_DIR$/CityEscape/Assets/Scripts/PlayerMove.cs" />
+        <option value="$PROJECT_DIR$/CityEscape/Assets/Scripts/CameraMove.cs" />
         <option value="$PROJECT_DIR$/CityEscape/Assets/Scripts/TriggerManager.cs" />
+        <option value="$PROJECT_DIR$/CityEscape/Assets/Scripts/PlayerMove.cs" />
       </list>
     </option>
   </component>
@@ -124,7 +122,10 @@
       <workItem from="1645635586132" duration="2062000" />
       <workItem from="1645700510822" duration="4963000" />
       <workItem from="1645966270869" duration="577000" />
-      <workItem from="1646074540984" duration="1739000" />
+      <workItem from="1646074540984" duration="3926000" />
+      <workItem from="1646137122607" duration="2648000" />
+      <workItem from="1646206142897" duration="16883000" />
+      <workItem from="1646396261662" duration="608000" />
     </task>
     <task id="LOCAL-00001" summary="First Basic Push of Project">
       <created>1639147664861</created>
@@ -175,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644335575356</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Adding Prefabs and TileManager">
+      <created>1646085130205</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1646085130207</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,7 +211,8 @@
     <MESSAGE value="Movement erweiterung" />
     <MESSAGE value="Erweiterung Moveset und player" />
     <MESSAGE value="flüssiges movmenent" />
-    <option name="LAST_COMMIT_MESSAGE" value="flüssiges movmenent" />
+    <MESSAGE value="Adding Prefabs and TileManager" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Prefabs and TileManager" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="161" key="#Plugins" timestamp="1640804892402">
@@ -222,10 +231,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1640619639425" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1644335596643">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1646085137308">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1644335596643" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1646085137308" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1640777023220">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

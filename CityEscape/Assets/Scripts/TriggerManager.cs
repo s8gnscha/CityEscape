@@ -4,68 +4,62 @@ using UnityEngine;
 
 public class TriggerManager : MonoBehaviour
 {
-   private List<GameObject> activeTiles;
-    public GameObject[] tilePrefabs;
 
-    public float tileLength = 30;
-    public int numberOfTiles = 3;
-    public int totalNumOfTiles = 8;
+	public GameObject[] tilePrefabs;
+	private float zspawn=0;
+	public float tileLength=30;
+	private int numberOfTiles=7;
 
-    public float zSpawn = 0;
-
-    private Transform playerTransform;
-
-    private int previousIndex;
-
-    private int nextIndex;
+	public Transform player;
+	private int counter=0;
+	private float startposition;
+	private float laufcounter;
+	private List<GameObject> activeTiles=new List<GameObject>();
 
     void Start()
     {
-        activeTiles = new List<GameObject>();
-        for (int i = 0; i < numberOfTiles; i++)
-        {
-            SpawnTile(i);
-            nextIndex = i+1;
-        }
+	
+	startposition=player.position.z;	
+ 	
 
-        playerTransform = GameObject.FindGameObjectWithTag("Hero").transform;
+for(int i=0;i<numberOfTiles;i++){
+		SpawnTile(i);
+		counter=i+1;
+		}
+	
+
+
 
     }
     void Update()
     {
-        if(playerTransform.position.z - 30 >= zSpawn - (numberOfTiles * tileLength))
-        {
-            previousIndex = nextIndex - 1;
-            DeleteTile();
-            SpawnTile(nextIndex);
-            nextIndex = nextIndex + 1;
-
-        }
+		Debug.Log(startposition);
+		//Debug.Log(player.position.z);
+		
+      if((player.position.z-startposition)<=-50){
+		if(counter>12){
+		counter=0;
+		}
+		startposition=player.position.z;
+		
+		
+		SpawnTile(counter);
+		DeleteTile();
+		counter++;
+		
+} 
             
     }
 
-    public void SpawnTile(int index = 0)
-    {
-        GameObject tile = tilePrefabs[index];
-        if (tile.activeInHierarchy)
-            tile = tilePrefabs[index + 8];
+	public void SpawnTile(int tileIndex){
+	GameObject go=Instantiate(tilePrefabs[tileIndex],transform.forward*zspawn*-1,transform.rotation);
+	activeTiles.Add(go);
+	zspawn=zspawn+tileLength;
+}
 
-        if(tile.activeInHierarchy)
-            tile = tilePrefabs[index + 16];
-
-        tile.transform.position = Vector3.forward * zSpawn;
-        tile.transform.rotation = Quaternion.identity;
-        tile.SetActive(true);
-
-        activeTiles.Add(tile);
-        zSpawn += tileLength;
-        previousIndex = index;
-    }
-
-    private void DeleteTile()
-    {
-        activeTiles[0].SetActive(false);
-        activeTiles.RemoveAt(0);
-        //PlayerManager.score += 3;
-    }
+	void DeleteTile(){
+Destroy(activeTiles[0]);
+activeTiles.RemoveAt(0);
+}
+   
 }
