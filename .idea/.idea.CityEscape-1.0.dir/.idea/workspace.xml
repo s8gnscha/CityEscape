@@ -12,16 +12,38 @@
   <component name="ChangeListManager">
     <list default="true" id="9918b46d-36c8-4628-bb73-638ecaf2b918" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CityEscape-1.0.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CityEscape-1.0.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/StandardTile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/StandardTile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/New Material 1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/New Material 1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/New Material 2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/New Material 2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/New Material 3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/New Material 3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/New Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/New Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/New Material.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/New Material.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/Materials/Stone Tile.mat" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/Materials/Stone Tile.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile10.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile10.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile11.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile11.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile12.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile12.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile2.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile4.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile5.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile6.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile6.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile7.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile7.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile8.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile8.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile9.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile9.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Scenes/StudyScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Scenes/StudyScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Scripts/.idea/.idea.Scripts.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Scripts/.idea/.idea.Scripts.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Scripts/CameraMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Scripts/CameraMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Scripts/CheckPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Scripts/CheckPoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Scripts/Goal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Scripts/Goal.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Scripts/PlayerMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Scripts/PlayerMove.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Scripts/TriggerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Scripts/TriggerManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape/ProjectSettings/TimeManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/ProjectSettings/TimeManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,10 +77,10 @@
         <option value="$PROJECT_DIR$/CityEscape/Assets/Scripts/SpawnTrigger.cs" />
         <option value="$PROJECT_DIR$/CityEscape/Assets/Scripts/CheckPoint.cs" />
         <option value="$PROJECT_DIR$/CityEscape/Assets/Scripts/Goal.cs" />
-        <option value="$PROJECT_DIR$/CityEscape/Assets/Scripts/SwipeManager.cs" />
-        <option value="$PROJECT_DIR$/CityEscape/Assets/Scripts/Obstacle.cs" />
-        <option value="$PROJECT_DIR$/CityEscape/Assets/Scripts/CameraMove.cs" />
         <option value="$PROJECT_DIR$/CityEscape/Assets/Scripts/TriggerManager.cs" />
+        <option value="$PROJECT_DIR$/CityEscape/Assets/Scripts/CameraMove.cs" />
+        <option value="$PROJECT_DIR$/CityEscape/Assets/Scripts/Obstacle.cs" />
+        <option value="$PROJECT_DIR$/CityEscape/Assets/Scripts/SwipeManager.cs" />
         <option value="$PROJECT_DIR$/CityEscape/Assets/Scripts/PlayerMove.cs" />
       </list>
     </option>
@@ -125,7 +147,22 @@
       <workItem from="1646074540984" duration="3926000" />
       <workItem from="1646137122607" duration="2648000" />
       <workItem from="1646206142897" duration="16883000" />
-      <workItem from="1646396261662" duration="608000" />
+      <workItem from="1646396261662" duration="2326000" />
+      <workItem from="1646497714755" duration="2905000" />
+      <workItem from="1646566644307" duration="5183000" />
+      <workItem from="1646764377510" duration="1142000" />
+      <workItem from="1646821278311" duration="5335000" />
+      <workItem from="1646909470645" duration="1187000" />
+      <workItem from="1646942691381" duration="917000" />
+      <workItem from="1647007571723" duration="1301000" />
+      <workItem from="1647250576175" duration="594000" />
+      <workItem from="1647337090875" duration="6369000" />
+      <workItem from="1647542659174" duration="3590000" />
+      <workItem from="1647695526047" duration="7762000" />
+      <workItem from="1647775926581" duration="8783000" />
+      <workItem from="1648115915295" duration="1460000" />
+      <workItem from="1648124990178" duration="791000" />
+      <workItem from="1648295018427" duration="2039000" />
     </task>
     <task id="LOCAL-00001" summary="First Basic Push of Project">
       <created>1639147664861</created>
@@ -183,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646085130207</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="study szene">
+      <created>1646426940580</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1646426940580</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +256,8 @@
     <MESSAGE value="Erweiterung Moveset und player" />
     <MESSAGE value="flüssiges movmenent" />
     <MESSAGE value="Adding Prefabs and TileManager" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding Prefabs and TileManager" />
+    <MESSAGE value="study szene" />
+    <option name="LAST_COMMIT_MESSAGE" value="study szene" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="161" key="#Plugins" timestamp="1640804892402">
@@ -231,10 +276,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1640619639425" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1646085137308">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1646426962965">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1646085137308" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1646426962965" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1640777023220">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

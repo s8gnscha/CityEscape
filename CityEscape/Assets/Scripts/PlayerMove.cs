@@ -9,6 +9,8 @@ using UnityEngine.UI;
  */
 public class PlayerMove : MonoBehaviour
 {
+
+	public Animator playerAnimator;
 	public CharacterController characterController;
 
 	public Transform target;
@@ -67,9 +69,22 @@ public class PlayerMove : MonoBehaviour
 
 	private bool leftrightmove;
 
+	private float movevalue = 3f;
+
+	private float movevaluebig = 6f;
+
 	private float f;
+
+	private bool noZ;
+	
+	void Awake () {
+		QualitySettings.vSyncCount = 0;  // VSync must be disabled
+		Application.targetFrameRate = 60;
+	}
     void Start()
     {
+	    noZ = false;
+	    spawnPosition=new Vector3(transform.position.x, transform.position.y, transform.position.z);
 	    isFalling = false;
 	    horizontalInput = -10;
 	     targetPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
@@ -101,9 +116,18 @@ public class PlayerMove : MonoBehaviour
         */
        void Update()
        {
-	       float x = Input.GetAxis("Horizontal");
-	       isGrounded = Physics.CheckSphere(groundcheck.position, 0.4f, groundLayers)||Physics.CheckSphere(groundcheckfront.position, 0.4f, groundLayers);
 
+	       
+	       
+	       //Debug.Log(isGrounded);
+	       //Debug.Log(currentTime);
+       }
+
+       void FixedUpdate()
+       {
+	       float x = Input.GetAxis("Horizontal");
+	       if(!noZ)
+	       isGrounded = Physics.CheckSphere(groundcheck.position, 0.4f, groundLayers)||Physics.CheckSphere(groundcheckfront.position, 0.4f, groundLayers);
 	       if (leftrightmove)
 	       {
 		       MoveLeftRight(x);
@@ -114,17 +138,13 @@ public class PlayerMove : MonoBehaviour
 		       CheckDown();
 		       GoDown();
 		       CheckFalling();
+		       FallToDeep();
 	       }
+	       MoveForward();
+	       
+
 
 	       
-	       //Debug.Log(targetPosition.x);
-	       //Debug.Log(isFalling);
-	       //Debug.Log(isWalling);
-       }
-
-       void FixedUpdate()
-       {
-	       MoveForward();
        }
 
 
@@ -132,7 +152,7 @@ public class PlayerMove : MonoBehaviour
        {
 	       
 	       //transform.forward = new Vector3(horizontalInput, 0, Mathf.Abs(horizontalInput) - 1);
-	       if (leftrightmove)
+	       if (leftrightmove && !noZ)
 	       {
 		       characterController.Move(new Vector3(0, 0, horizontalInput) * Time.deltaTime);
 	       }
@@ -142,10 +162,11 @@ public class PlayerMove : MonoBehaviour
 	       if ((isGrounded || isWalling) && velocity.y < 0)
 	       {
 		       velocity.y = 0;
-		       
+		       playerAnimator.SetBool("jump", false);
 	       }
 	       else
 	       {
+		       
 		       velocity.y += gravity * Time.deltaTime;
 	       }
 
@@ -159,7 +180,7 @@ public class PlayerMove : MonoBehaviour
        {
 	       targetPosition.y = transform.position.y;
 	       targetPosition.z = transform.position.z;
-	       if (!isFalling)//&&((transform.position.x-targetPosition.x)*(transform.position.x-targetPosition.x)<0.1f))
+	       if ((!isFalling)&&((transform.position.x-targetPosition.x)*(transform.position.x-targetPosition.x)<0.1f))
 	       {
 		       if (!isWalling)
 		       {
@@ -169,11 +190,12 @@ public class PlayerMove : MonoBehaviour
 				       {
 					      //characterController.Move(new Vector3(3f, 0, 0));
 					       
-					      targetPosition += Vector3.right * 3f;
+					      targetPosition += Vector3.right * movevalue;
 					       line = -1;
 					       if (isdown)
 					       {
-						       this.transform.Rotate(-90, 0, 0);
+						       //this.transform.Rotate(-90, 0, 0);
+						       playerAnimator.SetBool("slide", false);
 						       characterController.height = 2f;
 						       isdown = false;
 						       downcurrentTime = 1f;
@@ -191,12 +213,13 @@ public class PlayerMove : MonoBehaviour
 					       line = 0;
 					       if (isdown)
 					       {
-						       this.transform.Rotate(-90, 0, 0);
+						       //this.transform.Rotate(-90, 0, 0);
+						       playerAnimator.SetBool("slide", false);
 						       characterController.height = 2f;
 						       isdown = false;
 						       downcurrentTime = 1f;
 					       }
-					       targetPosition += Vector3.right * 3f;
+					       targetPosition += Vector3.right *movevalue;
 				       }
 			       }
 
@@ -212,12 +235,13 @@ public class PlayerMove : MonoBehaviour
 					       line = 1;
 					       if (isdown)
 					       {
-						       this.transform.Rotate(-90, 0, 0);
+						       //this.transform.Rotate(-90, 0, 0);
+						       playerAnimator.SetBool("slide", false);
 						       characterController.height = 2f;
 						       isdown = false;
 						       downcurrentTime = 1f;
 					       }
-					       targetPosition += Vector3.left * 3f;
+					       targetPosition += Vector3.left * movevalue;
 				       }
 
 				       else if (line == -1)
@@ -230,12 +254,13 @@ public class PlayerMove : MonoBehaviour
 					       line = 0;
 					       if (isdown)
 					       {
-						       this.transform.Rotate(-90, 0, 0);
+						       //this.transform.Rotate(-90, 0, 0);
+						       playerAnimator.SetBool("slide", false);
 						       characterController.height = 2f;
 						       isdown = false;
 						       downcurrentTime = 1f;
 					       }
-					       targetPosition += Vector3.left * 3f;
+					       targetPosition += Vector3.left * movevalue;
 				       }
 			       }
 		       }
@@ -246,9 +271,10 @@ public class PlayerMove : MonoBehaviour
 				       if (line == 0)
 				       {
 					       //characterController.Move(new Vector3(3f, 0, 0));
-					       targetPosition += Vector3.right * 3f;
+					       targetPosition += Vector3.right * movevalue;
 					       line = -1;
 					       currentTime = 2f;
+					       //Debug.Log("Leftsmall");
 					       runbar.normalizedValue = currentTime;
 					       fill.color = gradient.Evaluate(runbar.normalizedValue);
 					       ui.GetComponent<UI>().MessageWallText("Wallrun:3");
@@ -262,9 +288,10 @@ public class PlayerMove : MonoBehaviour
 
 					       //characterController.Move(new Vector3(7f, 0, 0));
 					       //StartCoroutine(JumpWallLeft());
-					       targetPosition += Vector3.right * 6f;
+					       targetPosition += Vector3.right * movevaluebig;
 					       line = -1;
 					       currentTime = 2f;
+					       //Debug.Log("Leftbig");
 					       runbar.normalizedValue = currentTime;
 					       fill.color = gradient.Evaluate(runbar.normalizedValue);
 					       isWalling = true;
@@ -277,9 +304,10 @@ public class PlayerMove : MonoBehaviour
 				       {
 
 					       //characterController.Move(new Vector3(-3f, 0, 0));
-					       targetPosition += Vector3.left * 3f;
+					       targetPosition += Vector3.left * movevalue;
 					       line = 1;
 					       currentTime = 2f;
+					       //Debug.Log("rightsmall");
 					       runbar.normalizedValue = currentTime;
 					       fill.color = gradient.Evaluate(runbar.normalizedValue);
 					       ui.GetComponent<UI>().MessageWallText("Wallrun:3");
@@ -292,9 +320,10 @@ public class PlayerMove : MonoBehaviour
 
 					       //characterController.Move(new Vector3(-7f, 0, 0));
 					       //StartCoroutine(JumpWallRight());
-					       targetPosition += Vector3.left * 6;
+					       targetPosition += Vector3.left * movevaluebig;
 					       line = 1;
 					       currentTime = 2f;
+					       //Debug.Log("rightbig");
 					       runbar.normalizedValue = currentTime;
 					       fill.color = gradient.Evaluate(runbar.normalizedValue);
 					       isWalling = true;
@@ -315,6 +344,36 @@ public class PlayerMove : MonoBehaviour
 				       characterController.Move(moveDir);
 			       else
 				       characterController.Move(diff);
+
+			       if (isWalling)
+			       {
+				       if ((transform.position.x - targetPosition.x) * (transform.position.x - targetPosition.x) >
+				           0.00001f)
+				       {
+					       //playerAnimator.SetBool("jump", true);
+					       if (line == -1)
+					       {
+						       playerAnimator.SetBool("jump", false);
+						       playerAnimator.SetBool("wallrunLeft", true);
+						       playerAnimator.SetBool("wallrunRight", false);
+					       
+					       }
+					       if (line == 1)
+					       {
+						       playerAnimator.SetBool("jump", false);
+						       playerAnimator.SetBool("wallrunLeft", false);
+						       playerAnimator.SetBool("wallrunRight", true);
+					       
+					       }
+				       }
+			       }
+		       }
+		       else
+		       {
+			       if (isWalling)
+			       {
+				       
+			       }
 		       }
 	       }
 	       
@@ -336,8 +395,7 @@ public class PlayerMove : MonoBehaviour
 			       if (isGrounded && (SwipeManager.swipeUp||Input.GetKeyDown("up")))
 			       {
 
-
-				       
+				       playerAnimator.SetBool("jump", true);
 				       velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
 				       
 			       }
@@ -364,9 +422,13 @@ public class PlayerMove : MonoBehaviour
 		       {
 			       if (!isdown)
 			       {
-				       this.transform.Rotate(90, 0, 0);
+				       //this.transform.Rotate(90, 0, 0);
+				       
+				       playerAnimator.SetBool("slide", true);
+				       
 				       characterController.height = 1f;
-				       characterController.Move(new Vector3(0, -1, 0));
+				       
+				       //characterController.Move(new Vector3(0, -1, 0));
 				       isdown = true;   
 			       }
 			       
@@ -397,7 +459,7 @@ public class PlayerMove : MonoBehaviour
 					       
 					       
 
-						      
+							   playerAnimator.SetBool("wallrunLeft", true);
 						       
 						       characterController.Move(new Vector3(0, 2.5f, 0));
 						       
@@ -423,7 +485,7 @@ public class PlayerMove : MonoBehaviour
 
 					       
 					       
-						       
+					           playerAnimator.SetBool("wallrunRight", true);
 						       
 						       characterController.Move(new Vector3(0, 2.5f, 0));
 						       
@@ -445,11 +507,12 @@ public class PlayerMove : MonoBehaviour
 
        void CheckWallWalking()
        {
-	       bool isWallLeft = Physics.CheckSphere(wallcheckleft.position, 0.7f, wallLayers);
-	       bool isWallRight = Physics.CheckSphere(wallcheckright.position, 0.7f, wallLayers);
+	       bool isWallLeft = Physics.CheckSphere(wallcheckleft.position, 0.9f, wallLayers);
+	       bool isWallRight = Physics.CheckSphere(wallcheckright.position, 0.9f, wallLayers);
 	       if (isGrounded)
 	       {
 		       currentTime = 2f;
+		       //Debug.Log("checkwallwalkingground");
 		       runbar.normalizedValue = currentTime;
 		       fill.color = gradient.Evaluate(runbar.normalizedValue);
 		       ui.GetComponent<UI>().MessageWallText("Wallrun:3");
@@ -466,13 +529,14 @@ public class PlayerMove : MonoBehaviour
 		       hero.GetComponent<Renderer>().material.SetColor("_Color", Color.green);
 		       
 			       
-		       if (currentTime <= 0f||SwipeManager.swipeDown)
+		       if (currentTime <= 0f||SwipeManager.swipeDown||Input.GetKeyDown("down"))
 		       {
 			       
 			       isFalling = true;
 			       isWalling = false;
 			       currentTime = 2f;
-
+			       //Debug.Log("checkwallwalkingcounterdown");
+			       playerAnimator.SetBool("falling", true);
 			       ui.GetComponent<UI>().MessageWallText("Wallrun:0");
 			       hero.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
 		       }
@@ -502,8 +566,10 @@ public class PlayerMove : MonoBehaviour
 
 			      
 		       }*/
-
-
+		       
+		       //Debug.Log(isWalling);
+		       if(velocity.y<-8f)
+		       playerAnimator.SetBool("falling", true);
 	       }
 
 	       if ((transform.position.x-targetPosition.x)*(transform.position.x-targetPosition.x)<0.1f)
@@ -511,6 +577,7 @@ public class PlayerMove : MonoBehaviour
 		       if (!(isWallLeft || isWallRight))
 		       {
 			       isWalling = false;
+			       
 			       hero.GetComponent<Renderer>().material.SetColor("_Color", Color.blue);
 		       }
 	       }
@@ -530,7 +597,8 @@ public class PlayerMove : MonoBehaviour
 		       downcurrentTime -= 1 * Time.deltaTime;
 		       if (downcurrentTime <= 0f||SwipeManager.swipeUp||Input.GetKeyDown("up"))//(downcurrentTime <= 0f||Input.GetKeyDown("up"))
 		       {
-			       this.transform.Rotate(-90, 0, 0);
+			       //this.transform.Rotate(-90, 0, 0);
+			       playerAnimator.SetBool("slide", false);
 			       characterController.height = 2f;
 			       isdown = false;
 			       downcurrentTime = 1f;
@@ -542,8 +610,15 @@ public class PlayerMove : MonoBehaviour
 
        void CheckFalling()
        {
-	       if (isGrounded)
+	       if (isGrounded&&isFalling)
+	       {
 		       isFalling = false;
+		       playerAnimator.SetBool("falling", false);
+		       playerAnimator.SetBool("wallrunLeft", false);
+		       playerAnimator.SetBool("wallrunRight", false);
+		      
+		       
+	       }
        }
 
 
@@ -589,9 +664,11 @@ public class PlayerMove : MonoBehaviour
 	       }
        }
 
-       public void SetCheckpoint(int checkpoint)
+       public void SetCheckpoint(Vector3 checkpoint)
        {
-	       checkpoints[checkpoint - 1] = true;
+	       //checkpoints[checkpoint - 1] = true;
+	       spawnPosition = checkpoint;
+
        }
 
 
@@ -632,8 +709,32 @@ public class PlayerMove : MonoBehaviour
        IEnumerator HitAnimation()
        {
 	       leftrightmove = false;
+	       playerAnimator.SetBool("fail", true);
 	       yield return new WaitForSeconds(0.5f);
+	       playerAnimator.SetBool("fail", false);
 	       leftrightmove = true;
+       }
+
+       void FallToDeep()
+       {
+	       if (transform.position.y < 12)
+	       {
+		       isFalling = true;
+		       isGrounded = false;
+		       noZ = true;
+	       }
+	       if (transform.position.y <= -10)
+	       {
+		       isGrounded = true;
+		       noZ = false;
+		       ui.GetComponent<UI>().MessageHit();
+		       ShowHit();
+		       characterController.enabled = false;
+		       target.transform.position=new Vector3(-5.2f, spawnPosition.y, spawnPosition.z);
+		       characterController.enabled = true;
+		       targetPosition.x = -5.2f;
+		       line=0;
+	       }
        }
        
 }

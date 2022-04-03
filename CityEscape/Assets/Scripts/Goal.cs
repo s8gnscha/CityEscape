@@ -10,6 +10,6 @@ public class Goal : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         ui.GetComponent<UI>().MessageGoal();
-		target.GetComponent<PlayerMove>().SetCheckpoint(4);
+		target.GetComponent<PlayerMove>().SetCheckpoint(transform.position);
     }
 }

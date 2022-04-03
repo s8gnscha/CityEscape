@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class CheckPoint : MonoBehaviour
 {
-    public GameObject target;
+    public GameObject player;
     public int checkpoint;
 
     void OnTriggerEnter(Collider other)
     {
         
-        target.GetComponent<PlayerMove>().SetCheckpoint(checkpoint);
+        player.GetComponent<PlayerMove>().SetCheckpoint(transform.position);
     }
 }

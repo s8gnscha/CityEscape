@@ -22,7 +22,7 @@ public class CameraMove : MonoBehaviour
     */
    void FixedUpdate ()
    {
-    Vector3 desiredPosition = new Vector3(target.position.x,13.5f,target.position.z) + offset;
+    Vector3 desiredPosition = new Vector3(-5.2f,13.5f,target.position.z) + offset;
     Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
     transform.position = smoothedPosition;
     
