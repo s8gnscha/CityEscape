@@ -25,127 +25,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9918b46d-36c8-4628-bb73-638ecaf2b918" name="Default Changelist" comment="">
+    <list default="true" id="b631ae64-b7a8-4afb-9458-b569c609a510" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CityEscape-1.0.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CityEscape-1.0.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CityEscape-1.0.dir/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CityEscape-1.0.dir/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/.idea/.idea.CityEscape.dir/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/.idea/.idea.CityEscape/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/.idea/.idea.CityEscape.dir/.idea/contentModel.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/.idea/.idea.CityEscape.dir/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/.idea/.idea.CityEscape/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/.idea/.idea.CityEscape.dir/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/.idea/.idea.CityEscape.dir/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/.idea/.idea.CityEscape/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/.idea/.idea.CityEscape.dir/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/.idea/.idea.CityEscape/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/.idea/.idea.CityEscape.dir/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/.idea/.idea.CityEscape.dir/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/.idea/.idea.CityEscape/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Objects/3.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Objects/3.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Objects/7.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Objects/7.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Cloth(2K)_COLOR.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Cloth(2K)_COLOR.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Cloth(2K)_DISP.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Cloth(2K)_DISP.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Cloth(2K)_NRM.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Cloth(2K)_NRM.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Cloth(2K)_OCC.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Cloth(2K)_OCC.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Cloth(2K)_SPEC.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Cloth(2K)_SPEC.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Concrete Wall(4K)_COLOR.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Concrete Wall(4K)_COLOR.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Concrete Wall(4K)_DISP.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Concrete Wall(4K)_DISP.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Concrete Wall(4K)_NRM.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Concrete Wall(4K)_NRM.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Concrete Wall(4K)_OCC.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Concrete Wall(4K)_OCC.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Concrete Wall(4K)_SPEC.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Concrete Wall(4K)_SPEC.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Lino(2K)_COLOR.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Lino(2K)_COLOR.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Lino(2K)_DISP.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Lino(2K)_DISP.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Lino(2K)_NRM.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Lino(2K)_NRM.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Lino(2K)_OCC.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Lino(2K)_OCC.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Lino(2K)_SPEC.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Lino(2K)_SPEC.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Painted Wall(2K).jpg" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Painted Wall(2K).jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Painted Wall(2K)_DISP.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Painted Wall(2K)_DISP.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Painted Wall(2K)_NRM.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Painted Wall(2K)_NRM.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Painted Wall(2K)_OCC.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Painted Wall(2K)_OCC.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Painted Wall(2K)_SPEC.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Painted Wall(2K)_SPEC.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Processed Leather(4k)_COLOR.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Processed Leather(4k)_COLOR.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Processed Leather(4k)_DISP.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Processed Leather(4k)_DISP.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Processed Leather(4k)_NRM.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Processed Leather(4k)_NRM.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Processed Leather(4k)_OCC.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Processed Leather(4k)_OCC.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Processed Leather(4k)_SPEC.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Processed Leather(4k)_SPEC.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Scratched Wood Tile(2K)_COLOR.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Scratched Wood Tile(2K)_COLOR.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Scratched Wood Tile(2K)_DISP.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Scratched Wood Tile(2K)_DISP.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Scratched Wood Tile(2K)_NRM.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Scratched Wood Tile(2K)_NRM.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Scratched Wood Tile(2K)_OCC.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Scratched Wood Tile(2K)_OCC.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Scratched Wood Tile(2K)_SPEC.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Scratched Wood Tile(2K)_SPEC.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Stained Leather(4K)_COLOR.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Stained Leather(4K)_COLOR.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Stained Leather(4K)_DISP.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Stained Leather(4K)_DISP.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Stained Leather(4K)_NRM.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Stained Leather(4K)_NRM.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Stained Leather(4K)_OCC.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Stained Leather(4K)_OCC.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Stained Leather(4K)_SPEC.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Stained Leather(4K)_SPEC.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Stone Tile(4K)_COLOR.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Stone Tile(4K)_COLOR.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Stone Tile(4K)_DISP.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Stone Tile(4K)_DISP.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Stone Tile(4K)_NRM.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Stone Tile(4K)_NRM.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Stone Tile(4K)_OCC.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Stone Tile(4K)_OCC.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Stone Tile(4K)_SPEC.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Stone Tile(4K)_SPEC.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Textured Carpet(2K)_COLOR.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Textured Carpet(2K)_COLOR.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Textured Carpet(2K)_DISP.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Textured Carpet(2K)_DISP.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Textured Carpet(2K)_NRM.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Textured Carpet(2K)_NRM.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Textured Carpet(2K)_OCC.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Textured Carpet(2K)_OCC.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Textured Carpet(2K)_SPEC.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Materials/Nice Materials Pack 2/OtherAssets/Textures/Textured Carpet(2K)_SPEC.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Models/23.2.22/2nd half/City_Escape_Billboard.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Models/23.2.22/2nd half/City_Escape_Billboard.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Models/23.2.22/2nd half/City_Escape_Door_Comined.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Models/23.2.22/2nd half/City_Escape_Door_Comined.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Models/23.2.22/2nd half/City_Escape_Door_Seperate.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Models/23.2.22/2nd half/City_Escape_Door_Seperate.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Models/23.2.22/2nd half/City_Escape_Dumpster.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Models/23.2.22/2nd half/City_Escape_Dumpster.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Models/23.2.22/2nd half/City_Escape_Large_Tirestack.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Models/23.2.22/2nd half/City_Escape_Large_Tirestack.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Models/23.2.22/2nd half/City_Escape_Small_Tirestack.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Models/23.2.22/2nd half/City_Escape_Small_Tirestack.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Models/23.2.22/2nd half/City_Escape_Wallsign.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Models/23.2.22/2nd half/City_Escape_Wallsign.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Models/23.2.22/2nd half/City_Escape_Window.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Models/23.2.22/2nd half/City_Escape_Window.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Models/23.2.22/2nd half/City_Escape_Window_Seperate.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Models/23.2.22/2nd half/City_Escape_Window_Seperate.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Models/23.2.22/Barrle.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Models/23.2.22/Barrle.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Models/23.2.22/Box_Qube.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Models/23.2.22/Box_Qube.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Models/23.2.22/Box_Square.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Models/23.2.22/Box_Square.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Models/23.2.22/City_Escape_Bus.obj" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Models/23.2.22/City_Escape_Bus.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Models/23.2.22/City_Escape_Fences.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Models/23.2.22/City_Escape_Fences.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Models/23.2.22/Newspaperholder.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Models/23.2.22/Newspaperholder.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Models/23.2.22/hinil_City_Escape_Wallset_Bricks.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Models/23.2.22/hinil_City_Escape_Wallset_Bricks.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Models/PNG/Bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Models/PNG/Bar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Models/hinil_CE_Comined.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Models/hinil_CE_Comined.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Hero.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Hero.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/OldTiles/Tile1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile1.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/OldTiles/Tile1.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile10.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/OldTiles/Tile10.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile10.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/OldTiles/Tile10.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile11.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/OldTiles/Tile11.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile11.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/OldTiles/Tile11.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile12.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/OldTiles/Tile12.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile12.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/OldTiles/Tile12.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/OldTiles/Tile2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/OldTiles/Tile2.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/OldTiles/Tile3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile3.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/OldTiles/Tile3.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/OldTiles/Tile4.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile4.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/OldTiles/Tile4.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/OldTiles/Tile5.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile5.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/OldTiles/Tile5.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile6.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/OldTiles/Tile6.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile6.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/OldTiles/Tile6.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile7.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/OldTiles/Tile7.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile7.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/OldTiles/Tile7.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile8.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/OldTiles/Tile8.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile8.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/OldTiles/Tile8.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile9.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/OldTiles/Tile9.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/Tile9.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Prefabs/Tiles/OldTiles/Tile9.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Scenes/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Scenes/StudyScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Scenes/StudyScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Scenes/StudyScene2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Scenes/StudyScene2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Scripts/.idea/.idea.Scripts.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Scripts/.idea/.idea.Scripts.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Scripts/CheckPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Scripts/CheckPoint.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Scripts/Goal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Scripts/Goal.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Scripts/Obstacle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Scripts/Obstacle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Scripts/PlayerMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Scripts/PlayerMove.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Scripts/SpawnTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Scripts/SpawnTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Scripts/SwipeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Scripts/SwipeManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Scripts/TriggerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Scripts/TriggerManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Assets/Scripts/UI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Assets/Scripts/UI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/ProjectSettings/AudioManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/ProjectSettings/AudioManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CityEscape/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+    </list>
+    <list id="d633c77e-7779-4e32-a1e5-247912588415" name="final" comment="">
+      <change afterPath="$PROJECT_DIR$/CityEscape/CityEscape_WwiseProject/Originals/SFX/Yesterdays HalfLongVersion.wav" afterDir="false" />
     </list>
     <list id="7a83a761-ce3c-4dd7-b371-57470a14f344" name="hopefully final" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -157,18 +42,34 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock://D:/UnityProjekte/publikation/CityEscape-1.0/CityEscape/Assets/Scripts/PlayerMove.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CityEscape/Assets/Wwise/API/Runtime/Handwritten/Common/AkEnumFlagAttribute.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CityEscape/Assets/Wwise/API/Runtime/Generated/Common/AKRESULT.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CityEscape/Assets/Wwise/Timeline/Runtime/AkTimelineEventTrack.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CityEscape/Assets/Wwise/MonoBehaviour/Runtime/AkMemBankLoader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CityEscape/Assets/Scripts/CheckPoint.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/UnityProjekte/publikation/CityEscape-1.0/CityEscape/Assets/Scenes/StudyScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/UnityProjekte/publikation/CityEscape-1.0/CityEscape/Assets/Scripts/SpawnTrigger.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/UnityProjekte/publikation/CityEscape-1.0/CityEscape/Assets/Scripts/Obstacle.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CityEscape/Assets/Scripts/PlayerMove.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CityEscape/Assets/Wwise/API/Runtime/Generated/iOS/AkAudioSessionMode_iOS.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CityEscape/Assets/Wwise/API/Runtime/Generated/Common/AkResourceMonitorDataSummary.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CityEscape/Assets/Wwise/API/Runtime/Generated/Linux/AkCommunicationSettings_Linux.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CityEscape/Assets/Scripts/Obstacle.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CityEscape/Assets/Wwise/API/Runtime/Generated/Android/AkUnityPlatformSpecificSettings_Android.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CityEscape/Assets/Scripts/SpawnTrigger.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CityEscape/Assets/Wwise/API/Runtime/Generated/tvOS/AkPlatformInitSettings_tvOS.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CityEscape/Assets/Wwise/Timeline/Runtime/AkTimelineEventPlayable.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitattributes" />
         <option value="$PROJECT_DIR$/CityEscape/.gitignore" />
+        <option value="$PROJECT_DIR$/.gitattributes" />
       </list>
     </option>
   </component>
-  <component name="ProjectId" id="2269AF5Ybx9V8wRTXRLVxu59kfl" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2KuRxm171SevS4RPCjytgpjqOqX" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -191,65 +92,9 @@
       <created>1674822796249</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1639147025328</updated>
-      <workItem from="1639147028628" duration="18193000" />
-      <workItem from="1639391633605" duration="1651000" />
-      <workItem from="1639658707334" duration="1514000" />
-      <workItem from="1639739122074" duration="2613000" />
-      <workItem from="1640612453392" duration="7871000" />
-      <workItem from="1640702014890" duration="4074000" />
-      <workItem from="1640713540070" duration="1025000" />
-      <workItem from="1640721259364" duration="6296000" />
-      <workItem from="1640776982689" duration="157000" />
-      <workItem from="1640804558455" duration="329000" />
-      <workItem from="1640804944381" duration="5373000" />
-      <workItem from="1640957389694" duration="884000" />
-      <workItem from="1641124812422" duration="6563000" />
-      <workItem from="1641208296762" duration="3119000" />
-      <workItem from="1641225002137" duration="7070000" />
-      <workItem from="1641377069681" duration="1815000" />
-      <workItem from="1641680305925" duration="6134000" />
-      <workItem from="1641814485806" duration="1915000" />
-      <workItem from="1641919028278" duration="5032000" />
-      <workItem from="1642113531028" duration="785000" />
-      <workItem from="1642252043031" duration="4284000" />
-      <workItem from="1642344168742" duration="2715000" />
-      <workItem from="1642418614846" duration="8834000" />
-      <workItem from="1642698686239" duration="14420000" />
-      <workItem from="1643110975674" duration="1857000" />
-      <workItem from="1643400977217" duration="6455000" />
-      <workItem from="1643471945155" duration="6570000" />
-      <workItem from="1643742506835" duration="7204000" />
-      <workItem from="1643790181156" duration="3057000" />
-      <workItem from="1643890161054" duration="16258000" />
-      <workItem from="1644076748928" duration="8440000" />
-      <workItem from="1644267806943" duration="13859000" />
-      <workItem from="1644346790237" duration="1257000" />
-      <workItem from="1644522937735" duration="6302000" />
-      <workItem from="1644579630634" duration="601000" />
-      <workItem from="1644963234914" duration="1440000" />
-      <workItem from="1645635586132" duration="2062000" />
-      <workItem from="1645700510822" duration="4963000" />
-      <workItem from="1645966270869" duration="577000" />
-      <workItem from="1646074540984" duration="3926000" />
-      <workItem from="1646137122607" duration="2648000" />
-      <workItem from="1646206142897" duration="16883000" />
-      <workItem from="1646396261662" duration="2326000" />
-      <workItem from="1646497714755" duration="2905000" />
-      <workItem from="1646566644307" duration="5183000" />
-      <workItem from="1646764377510" duration="1142000" />
-      <workItem from="1646821278311" duration="5335000" />
-      <workItem from="1646909470645" duration="1187000" />
-      <workItem from="1646942691381" duration="917000" />
-      <workItem from="1647007571723" duration="1301000" />
-      <workItem from="1647250576175" duration="594000" />
-      <workItem from="1647337090875" duration="6369000" />
-      <workItem from="1647542659174" duration="3590000" />
-      <workItem from="1647695526047" duration="7762000" />
-      <workItem from="1647775926581" duration="8783000" />
-      <workItem from="1648115915295" duration="1460000" />
-      <workItem from="1648124990178" duration="791000" />
-      <workItem from="1648295018427" duration="2039000" />
+      <updated>1674822796249</updated>
+      <workItem from="1674822860736" duration="4309000" />
+      <workItem from="1674830712600" duration="14059000" />
     </task>
     <task id="LOCAL-00001" summary="final">
       <created>1674836070456</created>
@@ -307,7 +152,42 @@
       <option name="project" value="LOCAL" />
       <updated>1674850416429</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00009" summary="final">
+      <created>1674851789391</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1674851789391</updated>
+    </task>
+    <task id="LOCAL-00010" summary="final other">
+      <created>1674852305192</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1674852305192</updated>
+    </task>
+    <task id="LOCAL-00011" summary="final2">
+      <created>1674853058125</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1674853058125</updated>
+    </task>
+    <task id="LOCAL-00012" summary="final3">
+      <created>1674853283525</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1674853283525</updated>
+    </task>
+    <task id="LOCAL-00013" summary="final4">
+      <created>1674853365334</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1674853365334</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,36 +221,28 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="First Basic Push of Project" />
-    <MESSAGE value="Dokumentieren von sachen" />
-    <MESSAGE value="Playermove extended" />
-    <MESSAGE value="Movement erweiterung" />
-    <MESSAGE value="Erweiterung Moveset und player" />
-    <MESSAGE value="flüssiges movmenent" />
-    <MESSAGE value="Adding Prefabs and TileManager" />
-    <MESSAGE value="study szene" />
-    <option name="LAST_COMMIT_MESSAGE" value="study szene" />
+    <MESSAGE value="final 2" />
+    <MESSAGE value="hopefully final" />
+    <MESSAGE value="new gitignore" />
+    <MESSAGE value="final" />
+    <MESSAGE value="final other" />
+    <MESSAGE value="final2" />
+    <MESSAGE value="final3" />
+    <MESSAGE value="final4" />
+    <option name="LAST_COMMIT_MESSAGE" value="final4" />
   </component>
   <component name="WindowStateProjectService">
     <state x="747" y="230" key="RollbackChangesDialog" timestamp="1674848690773">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1640804601854" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1640619639425">
+    <state x="747" y="230" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1674848690773" />
+    <state x="807" y="433" key="VCS.ChangelistChooser" timestamp="1674851961998">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1640619639425" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1646426962965">
+    <state x="807" y="433" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1674851961998" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1674853372425">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1646426962965" />
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1640777023220">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1640777023220" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1641759927653">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1641759927653" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1674853372425" />
   </component>
 </project>
