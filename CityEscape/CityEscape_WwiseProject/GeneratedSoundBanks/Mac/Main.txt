@@ -1,0 +1,14 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3157003241	Test			\Default Work Unit\Test	
+	3991942870	Music			\Default Work Unit\Music	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	307962790	Tempo			\Default Work Unit\Tempo	
+
+Effect plug-ins	ID	Name	Type				Notes
+	575574463	Wwise Time Stretch (Custom)	Wwise Time Stretch			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	19792195	OpenInventory	D:\UnityProjekte\CityEscape-1.0\CityEscape\CityEscape_WwiseProject\.cache\Mac\SFX\OpenInventory_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\OpenInventory		75612
+	196331088	love 4 ev-demo1	D:\UnityProjekte\CityEscape-1.0\CityEscape\CityEscape_WwiseProject\.cache\Mac\SFX\love 4 ev-demo1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\love 4 ev-demo1\love 4 ev-demo1		29550024
+

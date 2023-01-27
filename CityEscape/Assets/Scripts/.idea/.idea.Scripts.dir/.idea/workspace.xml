@@ -3,16 +3,45 @@
   <component name="ChangeListManager">
     <list default="true" id="49003cfd-712f-4f11-a425-5477ee125fd9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../../../.idea/.idea.CityEscape-1.0.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/.idea.CityEscape-1.0.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Prefabs/Tiles/StandardTile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Prefabs/Tiles/StandardTile.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Prefabs/Tiles/Tile1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Prefabs/Tiles/Tile1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Prefabs/Tiles/Tile2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Prefabs/Tiles/Tile2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Prefabs/Tiles/Tile3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Prefabs/Tiles/Tile3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefabs/Hero.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Prefabs/Hero.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefabs/Tiles/Tile1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefabs/Tiles/Tile1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefabs/Tiles/Tile10.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefabs/Tiles/Tile10.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefabs/Tiles/Tile11.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefabs/Tiles/Tile11.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefabs/Tiles/Tile12.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefabs/Tiles/Tile12.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefabs/Tiles/Tile2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefabs/Tiles/Tile2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefabs/Tiles/Tile3.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefabs/Tiles/Tile3.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefabs/Tiles/Tile4.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefabs/Tiles/Tile4.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefabs/Tiles/Tile5.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefabs/Tiles/Tile5.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefabs/Tiles/Tile6.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefabs/Tiles/Tile6.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefabs/Tiles/Tile7.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefabs/Tiles/Tile7.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefabs/Tiles/Tile8.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefabs/Tiles/Tile8.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefabs/Tiles/Tile9.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefabs/Tiles/Tile9.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/Menu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Scenes/StudyScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/StudyScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scenes/StudyScene2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/StudyScene2.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CameraMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CameraMove.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PlayerMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PlayerMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SwipeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SwipeManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TriggerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TriggerManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProjectSettings/AudioManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProjectSettings/AudioManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +59,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/CameraMove.cs" />
+        <option value="$PROJECT_DIR$/UI.cs" />
+        <option value="$PROJECT_DIR$/SwipeManager.cs" />
         <option value="$PROJECT_DIR$/PlayerMove.cs" />
+        <option value="$PROJECT_DIR$/CSVWriter.cs" />
         <option value="$PROJECT_DIR$/TriggerManager.cs" />
+        <option value="$PROJECT_DIR$/SoundManager.cs" />
       </list>
     </option>
   </component>
@@ -59,6 +92,11 @@
       <workItem from="1641988212528" duration="1544000" />
       <workItem from="1646053050359" duration="768000" />
       <workItem from="1646302734920" duration="8799000" />
+      <workItem from="1649162706448" duration="1488000" />
+      <workItem from="1649323252066" duration="1410000" />
+      <workItem from="1655635192982" duration="321000" />
+      <workItem from="1655636900851" duration="657000" />
+      <workItem from="1657308459690" duration="5514000" />
     </task>
     <servers />
   </component>

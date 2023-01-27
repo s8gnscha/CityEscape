@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Android" BasePlatform="Android" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>D:\UnityProjekte\CityEscape-1.0\CityEscape\CityEscape_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\UnityProjekte\CityEscape-1.0\CityEscape\CityEscape_WwiseProject\.cache\Android\</SourceFilesRoot>
+		<SoundBanksRoot>D:\UnityProjekte\CityEscape-1.0\CityEscape\CityEscape_WwiseProject\GeneratedSoundBanks\Android\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\UnityProjekte\CityEscape-1.0\CityEscape\CityEscape_WwiseProject\GeneratedSoundBanks\Android</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="2680555292">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1764570876" Language="SFX" Hash="2844697050">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main2</ObjectPath>
+			<ShortName>Main2</ShortName>
+			<Path>Main2.bnk</Path>
+			<IncludedEvents>
+				<Event Id="936793799" Name="medmus1" ObjectPath="\Events\Default Work Unit\medmus1" DurationType="OneShot" DurationMin="906.708496" DurationMax="906.708496">
+					<IncludedMemoryFiles>
+						<File Id="143068412" Language="SFX">
+							<ShortName>AngelInTheSnowAngepasst2.wav</ShortName>
+							<Path>SFX\AngelInTheSnowAngepasst2_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="307962790" Name="Tempo" ObjectPath="\Game Parameters\Default Work Unit\Tempo"/>
+			</GameParameters>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

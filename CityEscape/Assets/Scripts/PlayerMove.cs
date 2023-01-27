@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 
 /**
- * Movement vom Player. Beschränkt sich zunächst nur auf laufen
+ * Movement vom Player. Bestehend final aus laufen, sliden, wandlauf, springen. zudem werden alle aktionen des spielers da aus gesteuert z.B. hits, physik etc.
  */
 public class PlayerMove : MonoBehaviour
 {
@@ -77,6 +77,7 @@ public class PlayerMove : MonoBehaviour
 
 	private bool noZ;
 	
+	//Initialisierung der Daten. auserdem checkpoints auf false setzen
 	void Awake () {
 		QualitySettings.vSyncCount = 0;  // VSync must be disabled
 		Application.targetFrameRate = 60;
@@ -94,7 +95,7 @@ public class PlayerMove : MonoBehaviour
 	    line = 0;
 	    currentTime = 2f;
 	    leftrightmove = true;
-	    downcurrentTime = 1f;
+	    downcurrentTime = 0.5f;
 	    characterController= GetComponent<CharacterController>();
 	    hero.GetComponent<Renderer>().material.SetColor("_Color", Color.blue);
 	    isdown = false;
@@ -112,17 +113,17 @@ public class PlayerMove : MonoBehaviour
        
        /**
         * Bei fixedupdate wird durch die Velocity function vom rigidbody das automatische laufen vom Spieler generiert.
-        * Die Auskommentieren sind weitere Ansätze die bisher noch nicht funktionieren ^^"
+        * 
         */
        void Update()
        {
 
 	       
 	       
-	       //Debug.Log(isGrounded);
-	       //Debug.Log(currentTime);
+	
        }
 
+	//Ausführen und überprüfen der verschiedenen mechaniken. zudem überprüfung, ob der spieler auf dem boden ist.
        void FixedUpdate()
        {
 	       float x = Input.GetAxis("Horizontal");
@@ -148,15 +149,18 @@ public class PlayerMove : MonoBehaviour
        }
 
 
+	//Spieler bewegt sich entlang der Z Achse vorwärts
        void MoveForward()
        {
 	       
-	       //transform.forward = new Vector3(horizontalInput, 0, Mathf.Abs(horizontalInput) - 1);
+	       
 	       if (leftrightmove && !noZ)
 	       {
 		       characterController.Move(new Vector3(0, 0, horizontalInput) * Time.deltaTime);
 	       }
        }
+
+	//Überprüfen der gravitation, welches davon abhängt, ob der spieler wandlauf oder auf dem boden ist. ist das der fall, dann soll fallen gestoppt werden
        void Gravity(bool isGrounded)
        {
 	       if ((isGrounded || isWalling) && velocity.y < 0)
@@ -176,6 +180,8 @@ public class PlayerMove : MonoBehaviour
 
        }
        
+
+	//Überprüfen, ob aktion für rechts oder links laufen gemacht wird und ob das möglich ist. soll das der fall sein, dann soll er um eine gewisse einheit in die jeweilige richtung bewegen.
        void MoveLeftRight(float x)
        {
 	       targetPosition.y = transform.position.y;
@@ -184,21 +190,21 @@ public class PlayerMove : MonoBehaviour
 	       {
 		       if (!isWalling)
 		       {
-			       if(SwipeManager.swipeLeft||Input.GetKeyDown("left"))//if (Input.GetKeyDown("left"))
+			       if(SwipeManager.swipeLeft||Input.GetKeyDown("left"))
 			       {
 				       if (line == 0)
 				       {
-					      //characterController.Move(new Vector3(3f, 0, 0));
+					      
 					       
 					      targetPosition += Vector3.right * movevalue;
 					       line = -1;
 					       if (isdown)
 					       {
-						       //this.transform.Rotate(-90, 0, 0);
+						       
 						       playerAnimator.SetBool("slide", false);
 						       characterController.height = 2f;
 						       isdown = false;
-						       downcurrentTime = 1f;
+						       downcurrentTime = 0.5f;
 					       }
 
 				       }
@@ -206,40 +212,38 @@ public class PlayerMove : MonoBehaviour
 				       else if (line == 1)
 				       {
 					       
-					       //characterController.Move(new Vector3(3f, 0, 0));
+					      
 					       
 					       
 					     
 					       line = 0;
 					       if (isdown)
 					       {
-						       //this.transform.Rotate(-90, 0, 0);
+						       
 						       playerAnimator.SetBool("slide", false);
 						       characterController.height = 2f;
 						       isdown = false;
-						       downcurrentTime = 1f;
+						       downcurrentTime = 0.5f;
 					       }
 					       targetPosition += Vector3.right *movevalue;
 				       }
 			       }
 
-			       else if(SwipeManager.swipeRight||Input.GetKeyDown("right"))//if (Input.GetKeyDown("right"))
+			       else if(SwipeManager.swipeRight||Input.GetKeyDown("right"))
 			       {
 				       if (line == 0)
 				       {
-					       
-					      //characterController.Move(new Vector3(-3f, 0, 0));
 					       
 					      
 				
 					       line = 1;
 					       if (isdown)
 					       {
-						       //this.transform.Rotate(-90, 0, 0);
+						      
 						       playerAnimator.SetBool("slide", false);
 						       characterController.height = 2f;
 						       isdown = false;
-						       downcurrentTime = 1f;
+						       downcurrentTime = 0.5f;
 					       }
 					       targetPosition += Vector3.left * movevalue;
 				       }
@@ -247,18 +251,18 @@ public class PlayerMove : MonoBehaviour
 				       else if (line == -1)
 				       {
 
-					       //characterController.Move(new Vector3(-3f, 0, 0));
+					     
 					       
 					       
 					 
 					       line = 0;
 					       if (isdown)
 					       {
-						       //this.transform.Rotate(-90, 0, 0);
+						       
 						       playerAnimator.SetBool("slide", false);
 						       characterController.height = 2f;
 						       isdown = false;
-						       downcurrentTime = 1f;
+						       downcurrentTime = 0.5f;
 					       }
 					       targetPosition += Vector3.left * movevalue;
 				       }
@@ -266,15 +270,15 @@ public class PlayerMove : MonoBehaviour
 		       }
 		       else
 		       {
-			       if (SwipeManager.swipeLeft||Input.GetKeyDown("left"))//(Input.GetKeyDown("left"))
+			       if (SwipeManager.swipeLeft||Input.GetKeyDown("left"))
 			       {
 				       if (line == 0)
 				       {
-					       //characterController.Move(new Vector3(3f, 0, 0));
+					       
 					       targetPosition += Vector3.right * movevalue;
 					       line = -1;
 					       currentTime = 2f;
-					       //Debug.Log("Leftsmall");
+					       
 					       runbar.normalizedValue = currentTime;
 					       fill.color = gradient.Evaluate(runbar.normalizedValue);
 					       ui.GetComponent<UI>().MessageWallText("Wallrun:3");
@@ -286,28 +290,27 @@ public class PlayerMove : MonoBehaviour
 				       else if (line == 1)
 				       {
 
-					       //characterController.Move(new Vector3(7f, 0, 0));
-					       //StartCoroutine(JumpWallLeft());
+					
 					       targetPosition += Vector3.right * movevaluebig;
 					       line = -1;
 					       currentTime = 2f;
-					       //Debug.Log("Leftbig");
+					     
 					       runbar.normalizedValue = currentTime;
 					       fill.color = gradient.Evaluate(runbar.normalizedValue);
 					       isWalling = true;
 				       }
 			       }
 
-			       else if (SwipeManager.swipeRight||Input.GetKeyDown("right"))//(Input.GetKeyDown("right"))
+			       else if (SwipeManager.swipeRight||Input.GetKeyDown("right"))
 			       {
 				       if (line == 0)
 				       {
 
-					       //characterController.Move(new Vector3(-3f, 0, 0));
+					      
 					       targetPosition += Vector3.left * movevalue;
 					       line = 1;
 					       currentTime = 2f;
-					       //Debug.Log("rightsmall");
+					     
 					       runbar.normalizedValue = currentTime;
 					       fill.color = gradient.Evaluate(runbar.normalizedValue);
 					       ui.GetComponent<UI>().MessageWallText("Wallrun:3");
@@ -318,12 +321,11 @@ public class PlayerMove : MonoBehaviour
 				       else if (line == -1)
 				       {
 
-					       //characterController.Move(new Vector3(-7f, 0, 0));
-					       //StartCoroutine(JumpWallRight());
+					       
 					       targetPosition += Vector3.left * movevaluebig;
 					       line = 1;
 					       currentTime = 2f;
-					       //Debug.Log("rightbig");
+					       
 					       runbar.normalizedValue = currentTime;
 					       fill.color = gradient.Evaluate(runbar.normalizedValue);
 					       isWalling = true;
@@ -350,7 +352,7 @@ public class PlayerMove : MonoBehaviour
 				       if ((transform.position.x - targetPosition.x) * (transform.position.x - targetPosition.x) >
 				           0.00001f)
 				       {
-					       //playerAnimator.SetBool("jump", true);
+					      
 					       if (line == -1)
 					       {
 						       playerAnimator.SetBool("jump", false);
@@ -386,7 +388,7 @@ public class PlayerMove : MonoBehaviour
        }
        
       
-
+	//Checken, ob es möglich ist zu springen (nämlich dann, wenn man auf dem boden ist) und ob die aktion dafür ausgeführt wurde. sollte das der fall sein, bekommt der spieler einen schub entlang der y achse.
        void CheckJump(bool isGrounded)
        {
 
@@ -414,21 +416,23 @@ public class PlayerMove : MonoBehaviour
 
        }
 
+
+	//Überprüfen, ob sliden möglich ist (Boden sein und kein wandlauf) und ob aktion dafür gemacht wurde.
        void GoDown()
        {
 	       if (!isWalling&&isGrounded)
 	       {
-		       if (SwipeManager.swipeDown||Input.GetKeyDown("down"))//(Input.GetKeyDown("down"))
+		       if (SwipeManager.swipeDown||Input.GetKeyDown("down"))
 		       {
 			       if (!isdown)
 			       {
-				       //this.transform.Rotate(90, 0, 0);
+				     
 				       
 				       playerAnimator.SetBool("slide", true);
 				       
 				       characterController.height = 1f;
 				       
-				       //characterController.Move(new Vector3(0, -1, 0));
+				      
 				       isdown = true;   
 			       }
 			       
@@ -445,11 +449,12 @@ public class PlayerMove : MonoBehaviour
 
        }
 
+	//Überprüfen ob wandlauf möglich ist(Wenn wand da ist) Und ob die notwendige aktion dafür gemacht wurde.
        void WalkWall(float x)
        {
 	       if (push&&!isdown&&isGrounded)
 	       {
-		       if (SwipeManager.swipeLeft||Input.GetKeyDown("left"))//(Input.GetKeyDown("left"))
+		       if (SwipeManager.swipeLeft||Input.GetKeyDown("left"))
 		       {
 			       if (line == -1)
 			       {
@@ -475,7 +480,7 @@ public class PlayerMove : MonoBehaviour
 			       }
 		       }
 
-		       else if (SwipeManager.swipeRight||Input.GetKeyDown("right"))//(Input.GetKeyDown("right"))
+		       else if (SwipeManager.swipeRight||Input.GetKeyDown("right"))
 		       {
 			       if (line == 1)
 			       {
@@ -505,6 +510,8 @@ public class PlayerMove : MonoBehaviour
 	     
        }
 
+
+	//Überprüft, ob wandlauf immer noch aktiv ist. wenn ja, soll counter runter gehen. wenn counter runter oder keine wand, dann soll der spieler fallen
        void CheckWallWalking()
        {
 	       bool isWallLeft = Physics.CheckSphere(wallcheckleft.position, 0.9f, wallLayers);
@@ -512,7 +519,7 @@ public class PlayerMove : MonoBehaviour
 	       if (isGrounded)
 	       {
 		       currentTime = 2f;
-		       //Debug.Log("checkwallwalkingground");
+		       
 		       runbar.normalizedValue = currentTime;
 		       fill.color = gradient.Evaluate(runbar.normalizedValue);
 		       ui.GetComponent<UI>().MessageWallText("Wallrun:3");
@@ -535,7 +542,7 @@ public class PlayerMove : MonoBehaviour
 			       isFalling = true;
 			       isWalling = false;
 			       currentTime = 2f;
-			       //Debug.Log("checkwallwalkingcounterdown");
+			       
 			       playerAnimator.SetBool("falling", true);
 			       ui.GetComponent<UI>().MessageWallText("Wallrun:0");
 			       hero.GetComponent<Renderer>().material.SetColor("_Color", Color.red);
@@ -553,21 +560,7 @@ public class PlayerMove : MonoBehaviour
 	       }
 	       else
 	       {
-		       /*if (isGrounded)
-		       {
-			       if (target.position.x > 7f)
-			       {
-				       targetPosition.x = 7f;
-			       }
-			       else if (target.position.x < 1f)
-			       {
-				       targetPosition.x = 1f;
-			       }
 
-			      
-		       }*/
-		       
-		       //Debug.Log(isWalling);
 		       if(velocity.y<-8f)
 		       playerAnimator.SetBool("falling", true);
 	       }
@@ -590,6 +583,7 @@ public class PlayerMove : MonoBehaviour
 
        }
 
+	//Checken, ob der spieler immer noch slidet. wenn ja, dann counter soll der counter runtergehen. ist der counter unten oder slide wurde abgebrochen, dann soll der spieler aufstehen
        void CheckDown()
        {
 	       if (isdown)
@@ -597,17 +591,19 @@ public class PlayerMove : MonoBehaviour
 		       downcurrentTime -= 1 * Time.deltaTime;
 		       if (downcurrentTime <= 0f||SwipeManager.swipeUp||Input.GetKeyDown("up"))//(downcurrentTime <= 0f||Input.GetKeyDown("up"))
 		       {
-			       //this.transform.Rotate(-90, 0, 0);
+			       
 			       playerAnimator.SetBool("slide", false);
 			       characterController.height = 2f;
 			       isdown = false;
-			       downcurrentTime = 1f;
+			       downcurrentTime = 0.5f;
 		       }
 
 
 	       }
        }
 
+
+	//Überprüfen, ob der spieler immer noch am fallen ist
        void CheckFalling()
        {
 	       if (isGrounded&&isFalling)
@@ -621,7 +617,7 @@ public class PlayerMove : MonoBehaviour
 	       }
        }
 
-
+	//zurückehren zum spawn. wenn der spieler runterfällt in eine schlucht, dann kehrt in dieser gesetzten position zurück.
        public void SetSpawn()
        {
 
@@ -664,14 +660,15 @@ public class PlayerMove : MonoBehaviour
 	       }
        }
 
+	//Setzen des checkpoints
        public void SetCheckpoint(Vector3 checkpoint)
        {
-	       //checkpoints[checkpoint - 1] = true;
+	       
 	       spawnPosition = checkpoint;
 
        }
 
-
+	//Springen zur wallrunsituation. Notwendig zum debuggen
        public void GoToWallrun()
        {
 	       characterController.enabled = false;
@@ -681,7 +678,7 @@ public class PlayerMove : MonoBehaviour
 	       line=0;
        }
 
-
+	//Flüssiges übergehen des spielers auf den bahnen
        void SmoothMove(Vector3 position1,Vector3 position2)
        {
 	       if (position1 != position2)
@@ -700,12 +697,16 @@ public class PlayerMove : MonoBehaviour
 	       
        }
 
+
+	//Hit soll angezeigt werden
       public void ShowHit()
        {
 	       StartCoroutine(HitAnimation());
 
        }
 
+
+	//Abspielen der hit animation
        IEnumerator HitAnimation()
        {
 	       leftrightmove = false;
@@ -715,6 +716,8 @@ public class PlayerMove : MonoBehaviour
 	       leftrightmove = true;
        }
 
+
+	//Überprüfen, ob man zu tief fällt. ist man zu tief entlang der y achse, dann soll der spieler zurück zum jeweiligen spawn kommen
        void FallToDeep()
        {
 	       if (transform.position.y < 12)

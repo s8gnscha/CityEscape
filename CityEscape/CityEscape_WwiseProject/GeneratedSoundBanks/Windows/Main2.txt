@@ -1,0 +1,12 @@
+Event	ID	Name			Wwise Object Path	Notes
+	936793799	medmus1			\Default Work Unit\medmus1	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	307962790	Tempo			\Default Work Unit\Tempo	
+
+Effect plug-ins	ID	Name	Type				Notes
+	776164758	Wwise Time Stretch (Custom)	Wwise Time Stretch			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	143068412	AngelInTheSnowAngepasst2	D:\UnityProjekte\CityEscape-1.0\CityEscape\CityEscape_WwiseProject\.cache\Windows\SFX\AngelInTheSnowAngepasst2_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\AngelInTheSnowPlayList\AngelInTheSnowAngepasst2\AngelInTheSnowAngepasst2		72050032
+

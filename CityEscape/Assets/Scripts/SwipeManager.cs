@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+//Überprüfung der Aktionen durch das Swipen auf dem bildschirm
 public class SwipeManager : MonoBehaviour
 {
    public static bool tap, swipeLeft, swipeRight, swipeUp, swipeDown;
@@ -52,8 +54,8 @@ public class SwipeManager : MonoBehaviour
                 swipeDelta = (Vector2)Input.mousePosition - startTouch;
         }
 
-        //Did we cross the distance?
-        if (swipeDelta.magnitude > 150)
+        //Did we cross the distance? If its true, then set the action as true and save the coordinate, as long as the finger is on the screen
+        if (swipeDelta.magnitude > 100)
         {
             //Which direction?
             float x = swipeDelta.x;
