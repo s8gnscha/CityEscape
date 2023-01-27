@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F0849318-E0AF-4EF6-B77E-55FD519417C0}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{F0849318-E0AF-4EF6-B77E-55FD519417C0}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="medmus1" ID="{24868B0D-6A56-47C1-BF2C-7424E28D13E5}">
+					<ChildrenList>
+						<Action Name="" ID="{8030EE62-F5D3-4B9C-9F62-27EAEAF22784}" ShortID="674746999">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AngelInTheSnowPlayList" ID="{5A7726AE-36A9-4B8D-B0EE-336849C0E283}" WorkUnitID="{FF5761F7-427D-40F9-9A67-C2A99E656A6B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{58CFE1DE-5EFB-46B0-9FF9-35EE5076DC30}" ShortID="761584826">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AngelInTheSnowPlayList" ID="{5A7726AE-36A9-4B8D-B0EE-336849C0E283}" WorkUnitID="{FF5761F7-427D-40F9-9A67-C2A99E656A6B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
