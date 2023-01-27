@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="07fb47a1-549f-4956-89ce-cbef2dfcb843" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/.idea.CityEscape-1.0.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/.idea.CityEscape-1.0.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/../.vs/slnx.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/StudyScene2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/StudyScene2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CSVWriter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CSVWriter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CheckPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CheckPoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Goal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Goal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenuHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenuHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Obstacle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Obstacle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RoundCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RoundCounter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SoundManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpawnTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SwipeManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SwipeManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TriggerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TriggerManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tutorial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tutorial.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TutorialTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TutorialTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/AlbumArtSmall.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/AlbumArtSmall.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/AlbumArt_{B5020207-474E-4720-409C-9B0597666D00}_Large.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/AlbumArt_{B5020207-474E-4720-409C-9B0597666D00}_Large.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/AlbumArt_{B5020207-474E-4720-409C-9B0597666D00}_Small.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/AlbumArt_{B5020207-474E-4720-409C-9B0597666D00}_Small.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Eiffel 65 - Blue (Da Ba Dee).mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Eiffel 65 - Blue (Da Ba Dee).mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Folder.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Folder.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Jet Set Radio Future - Funky Dealer.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Jet Set Radio Future - Funky Dealer.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Prank.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Prank/.idea/.idea.Prank.dir/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Prank/.idea/.idea.Prank.dir/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Prank/.idea/.idea.Prank.dir/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Prank/.idea/.idea.Prank.dir/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Prank/.idea/.idea.Prank.dir/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Prank/.idea/.idea.Prank.dir/riderModule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Prank/New Render Texture.renderTexture" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Prank/New Render Texture.renderTexture.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Prank/Prank.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Prank/Prank.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Prank/Rick Astley - Never Gonna Give You Up (Official Music Video).mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sounds/Prank/Rick Astley - Never Gonna Give You Up (Official Music Video).mp4.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape_WwiseProject/.cache/Android/SFX/Wwise.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape_WwiseProject/.cache/Android/SFX/Wwise.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape_WwiseProject/.cache/Mac/SFX/Wwise.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape_WwiseProject/.cache/Mac/SFX/Wwise.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape_WwiseProject/.cache/SoundBankInfoCache.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape_WwiseProject/.cache/SoundBankInfoCache.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape_WwiseProject/.cache/Windows/SFX/Wwise.dat" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape_WwiseProject/.cache/Windows/SFX/Wwise.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape_WwiseProject/CityEscape_WwiseProject.German.validationcache" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape_WwiseProject/CityEscape_WwiseProject.German.validationcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape_WwiseProject/CityEscape_WwiseProject.German.wsettings" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape_WwiseProject/CityEscape_WwiseProject.German.wsettings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape_WwiseProject/Events/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape_WwiseProject/Events/Default Work Unit.wwu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape_WwiseProject/GeneratedSoundBanks/Android/Main2.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape_WwiseProject/GeneratedSoundBanks/Android/Main2.bnk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape_WwiseProject/GeneratedSoundBanks/Android/Main2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape_WwiseProject/GeneratedSoundBanks/Android/Main2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape_WwiseProject/GeneratedSoundBanks/Android/SoundbanksInfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape_WwiseProject/GeneratedSoundBanks/Android/SoundbanksInfo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape_WwiseProject/GeneratedSoundBanks/Mac/Main2.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape_WwiseProject/GeneratedSoundBanks/Mac/Main2.bnk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape_WwiseProject/GeneratedSoundBanks/Mac/Main2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape_WwiseProject/GeneratedSoundBanks/Mac/Main2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape_WwiseProject/GeneratedSoundBanks/Mac/SoundbanksInfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape_WwiseProject/GeneratedSoundBanks/Mac/SoundbanksInfo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape_WwiseProject/GeneratedSoundBanks/Windows/Main2.bnk" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape_WwiseProject/GeneratedSoundBanks/Windows/Main2.bnk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape_WwiseProject/GeneratedSoundBanks/Windows/Main2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape_WwiseProject/GeneratedSoundBanks/Windows/Main2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape_WwiseProject/GeneratedSoundBanks/Windows/SoundbanksInfo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape_WwiseProject/GeneratedSoundBanks/Windows/SoundbanksInfo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CityEscape_WwiseProject/Interactive Music Hierarchy/Default Work Unit.wwu" beforeDir="false" afterPath="$PROJECT_DIR$/CityEscape_WwiseProject/Interactive Music Hierarchy/Default Work Unit.wwu" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2GjH5rpcwlw1YJ0DLhqUz5yzk7e" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <set />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="07fb47a1-549f-4956-89ce-cbef2dfcb843" name="Default Changelist" comment="" />
+      <created>1666894920384</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666894920384</updated>
+      <workItem from="1666894935490" duration="38000" />
+      <workItem from="1674822126707" duration="160000" />
+    </task>
+    <servers />
+  </component>
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>
